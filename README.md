@@ -108,7 +108,7 @@ Web projects are analyzed from the wireframes shared by the design team. Wirefra
 [The project you will build can be found here.](https://www.figma.com/proto/sMmlQaZldfDcLERYYWe6h4/Bata-Bit?node-id=44-594&scaling=scale-down)
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-frontend-developer-workshop/blob/main/readme_images/batatabit.webp?raw=true" width= "100%" alt="Batatabit">
+  <img src="https://github.com/juancumbeq/platzi-frontend-developer-workshop/blob/main/readme_images/batatabit.png?raw=true" width= "100%" alt="Batatabit">
 </p>
 
 It is a static landing page with a header, a footer, and four content sections. To see how it is designed, go to the tab above and select "Open in editor."
