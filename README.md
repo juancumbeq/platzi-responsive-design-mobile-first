@@ -183,8 +183,13 @@ Reduced Desktop Browser View
   <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/reduced-desktopX.png?raw=true" width= "75%" alt="Reduced desktop x">
 </p>
 
-Conclusion
-Now you know why this standard is so important in your knowledge as a web developer. In addition to ensuring that your sites reach more devices and people, you are also making your code easier to scale and modify in the future. Now, I invite you to continue with the course and keep learning more about Mobile First.
+<br>
+
+  ### Conclusion
+Now you know why this standard is so important in your knowledge as a web developer. In addition to ensuring that your sites reach more devices and people, you are also making your code easier to scale and modify in the future.
+
+<br>
+<br>
 
   ## [Initial Architecture]()
 
