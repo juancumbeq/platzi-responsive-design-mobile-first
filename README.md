@@ -113,53 +113,221 @@ Web projects are analyzed from the wireframes shared by the design team. Wirefra
 
 It is a static landing page with a header, a footer, and four content sections. To see how it is designed, go to the tab above and select "Open in editor."
 
-image.png
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/open-in-editor.png?raw=true" width= "25%" alt="Open in editor">
+</p>
+
 You will be able to see all the screens created by the design team, along with the color palette, buttons, fonts, images, etc. You can also see, by clicking on a section, the CSS code that Figma recommends. It is not about copying and pasting, but about reviewing the elements that compose it to use them in our code, such as the font, color, or sizes.
 
-  ## [The Value Of Mobile First]()
-  ## [Initial Architecture]()
-  ## [Assets Of Our Project]()
-  ## [Fonts Of Our Project]()
-  ## [Base Styles]()
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/css-figma.png?raw=true" width= "75%" alt="CSS Figma">
+</p>
 
-# HEADER SECTION
+<br>
+<br>
+
+  ## [The Value Of Mobile First]()
+In responsive design, a design adapts to different views regardless of which device it was developed for first, and with this standard, we will create for mobile devices first.
+
+<br>
+
+  ### Who Benefits?
+For Developers: Scaling is Easier
+Converting a desktop view to a mobile view requires various considerations and can become complex as it often involves removing elements from the view, whereas it is generally easier to add them.
+
+Mobile First, on the other hand, makes this experience more manageable, and at the code level, it is quite simple to scale from mobile to larger views, with the opportunity to add additional components in the process.
+
+For Users: Less is More and for More People
+Yes, it is true that more people are browsing on mobile devices. Mobile First not only reaches more devices due to the wide variety of views available on the market but also reaches more people.
+
+Simplicity in design helps make your communication effective towards your users, providing a pleasant browsing experience and, together with an accessible design, significantly increasing your reach.
+
+This also adds value to your users with limited connection speeds and/or low-end devices.
+
+For Businesses: Better Search Engine Positioning
+Google began working in early 2018 with an algorithm that gives greater relevance to sites optimized for mobile. This will not affect sites that have both desktop and mobile versions but will penalize those lacking a mobile alternative.
+
+For SEO purposes, this can mean a lower user bounce rate if the content is attractive enough to retain users' attention.
+
+Progressive Evolution
+Just as technology advances, we can also observe changes in frontend development trends that even become standards, such as Mobile First.
+
+Initially, we developed for desktops where our website could be accessed from a desktop computer and laptop monitors. Then arose the need to adapt these sites to portable devices like smartphones and tablets.
+
+As mobile site consumption increased, the need arose to develop first for these devices and then scale to larger screens. This evolution has led to some services being available as mobile-only, where the only way to access them is from a mobile device, such as financial applications, home delivery services, and more.
+
+Twitter as a Case Study
+This popular social network has undergone various design transformations, one of the most important being its visualization across different devices.
+
+By analyzing these screenshots, you can see how the mobile view remains quite simplified, and as the view size increases, other elements are added while maintaining common ones.
+
+Mobile View (iPhone X)
+Include Screenshot Here
+
+Desktop Browser View
+Include Screenshot Here
+
+Reduced Desktop Browser View
+Include Screenshot Here
+
+Conclusion
+Now you know why this standard is so important in your knowledge as a web developer. In addition to ensuring that your sites reach more devices and people, you are also making your code easier to scale and modify in the future. Now, I invite you to continue with the course and keep learning more about Mobile First.
+
+  ## [Initial Architecture]()
+
+<br>
+<br>
+
+  ## [Assets Of Our Project]()
+
+<br>
+<br>
+
+  ## [Fonts Of Our Project]()
+
+<br>
+<br>
+
+  ## [Base Styles]()
+
+<br>
+<br>
+<br>
+
+# HEADER SECTION
   ## [Header Layout]()
-  ## [BEM Architecture Implementation]()
-  ## [Use Of ``linear-gradient``]()
-  ## [Use Of ``position`` For Floating Button]()
+
+<br>
+<br>
+
+  ## [BEM Architecture Implementation]()
+
+<br>
+<br>
+
+  ## [Use Of ``linear-gradient``]()
+
+<br>
+<br>
+
+  ## [Use Of ``position`` For Floating Button]()
+
+<br>
+<br>
+<br>
 
 # EXCHANGE SECTION
   ## [Base Structure Of The Exchange Section]()
+
+<br>
+<br>
+
   ## [Background Image]()
+
+<br>
+<br>
+
   ## [Currency Table Structure]()
-  ## [Currency Table Base Styles]()
+
+<br>
+<br>
+
+  ## [Currency Table Base Styles]()
+
+<br>
+<br>
+
   ## [Detailing Currency Table Styles]()
+
+<br>
+<br>
+
   ## [Finishing Currency Table Styles]()
+
+<br>
+<br>
+<br>
 
 # BENEFITS SECTION
   ## [Base Structure Of The Benefits Section]()
+
+<br>
+<br>
+
   ## [Benefits Section Styles]()
+
+<br>
+<br>
+
   ## [Layout Of Benefits Cards]()
+
+<br>
+<br>
+<br>
 
 # PLANS SECTION
   ## [Layout Of Comodin Section]()
+
+<br>
+<br>
+
   ## [Plans Section Structure]()
+
+<br>
+<br>
+
   ## [Applying Styles To The Plans Section]()
+
+<br>
+<br>
+
   ## [Applying Styles To The Plans Section Cards]()
-  ## D[etailing Styles On Plan Cards]()
-  ## [Applying Styles To The Call To Action Button]()
+
+<br>
+<br>
+
+  ## [Detailing Styles On Plan Cards]()
+
+<br>
+<br>
+
+  ## [Applying Styles To The Call To Action Button]()
+
+<br>
+<br>
+
   ## [Horizontal Scroll With CSS]()
+
+<br>
+<br>
+<br>
 
 # FOOTER SECTION
   ## [Footer]()
 
+<br>
+<br>
+<br>
+
 # MEDIAQUERIES
   ## [Applying Mediaqueries]()
 
-# LIGHTHOUSE
+<br>
+<br>
+<br>
+
+# LIGHTHOUSE
   ## [Analysis With Lighthouse]()
+
+<br>
+<br>
+<br>
 
 # NEXT STEPS
   ## [Close And Next Steps]()
+
+<br>
+<br>
+<br>
 
 # AUTHOR
