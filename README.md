@@ -132,43 +132,56 @@ In responsive design, a design adapts to different views regardless of which dev
 <br>
 
   ### Who Benefits?
-For Developers: Scaling is Easier
+  * For Developers: Scaling is Easier
+
 Converting a desktop view to a mobile view requires various considerations and can become complex as it often involves removing elements from the view, whereas it is generally easier to add them.
 
 Mobile First, on the other hand, makes this experience more manageable, and at the code level, it is quite simple to scale from mobile to larger views, with the opportunity to add additional components in the process.
 
-For Users: Less is More and for More People
+  * For Users: Less is More and for More People
+
 Yes, it is true that more people are browsing on mobile devices. Mobile First not only reaches more devices due to the wide variety of views available on the market but also reaches more people.
 
 Simplicity in design helps make your communication effective towards your users, providing a pleasant browsing experience and, together with an accessible design, significantly increasing your reach.
 
 This also adds value to your users with limited connection speeds and/or low-end devices.
 
-For Businesses: Better Search Engine Positioning
+  * For Businesses: Better Search Engine Positioning
+  
 Google began working in early 2018 with an algorithm that gives greater relevance to sites optimized for mobile. This will not affect sites that have both desktop and mobile versions but will penalize those lacking a mobile alternative.
 
 For SEO purposes, this can mean a lower user bounce rate if the content is attractive enough to retain users' attention.
 
-Progressive Evolution
+<br>
+
+  ### Progressive Evolution
 Just as technology advances, we can also observe changes in frontend development trends that even become standards, such as Mobile First.
 
 Initially, we developed for desktops where our website could be accessed from a desktop computer and laptop monitors. Then arose the need to adapt these sites to portable devices like smartphones and tablets.
 
 As mobile site consumption increased, the need arose to develop first for these devices and then scale to larger screens. This evolution has led to some services being available as mobile-only, where the only way to access them is from a mobile device, such as financial applications, home delivery services, and more.
 
-Twitter as a Case Study
+<br>
+
+  ### Twitter as a Case Study
 This popular social network has undergone various design transformations, one of the most important being its visualization across different devices.
 
 By analyzing these screenshots, you can see how the mobile view remains quite simplified, and as the view size increases, other elements are added while maintaining common ones.
 
 Mobile View (iPhone X)
-Include Screenshot Here
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/mobileX.png?raw=true" width= "75%" alt="Mobile X">
+</p>
 
 Desktop Browser View
-Include Screenshot Here
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/desktopX.png?raw=true" width= "75%" alt="Desktop X">
+</p>
 
 Reduced Desktop Browser View
-Include Screenshot Here
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/reduced-desktopX.png?raw=true" width= "75%" alt="Reduced desktop x">
+</p>
 
 Conclusion
 Now you know why this standard is so important in your knowledge as a web developer. In addition to ensuring that your sites reach more devices and people, you are also making your code easier to scale and modify in the future. Now, I invite you to continue with the course and keep learning more about Mobile First.
