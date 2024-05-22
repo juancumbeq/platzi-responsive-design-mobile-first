@@ -191,22 +191,59 @@ Now you know why this standard is so important in your knowledge as a web develo
 <br>
 <br>
 
-  ## [Initial Architecture]()
+  ## [Initial Architecture](https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/desktopX.png?raw=true)
+Web architecture can be defined as the way in which the pages of a website are structured and linked to each other in a logical and coherent manner. An ideal web architecture helps users and search engines easily find what they are looking for on a website.
+
+<br>
+
+  ### What is the basic structure in web architecture?
+  * A header with a logo, title, and a button.
+  * A section with a logo, text, and a table.
+  * A second section with titles, cards, text, and some icons.
+  * A third section with a background image and a title.
+  * A final section with cards, a title, text, and a price carousel.
+  * A footer with an image and text.
+
+Thus, we could define the basic structure of the body of our **index.html** as follows:
+```
+<body>
+    <header></header>
+    <main>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+    </main>
+    <footer></footer>
+</body>
+```
+
+<br>
+
+  ### Tips for Structuring Your Web Architecture
+Remember:
+
+You should have your **index.html** and **.css** files within organized folders.
+**"index"** is the filename that the browser reads first.
+To abbreviate the writing of HTML code, you can use Emmet. In this case, to write the basic structure, use: ``header^main>section*4^footer``
 
 <br>
 <br>
 
   ## [Assets Of Our Project]()
 
+
 <br>
 <br>
 
   ## [Fonts Of Our Project]()
 
+
 <br>
 <br>
 
   ## [Base Styles]()
+
 
 <br>
 <br>
