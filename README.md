@@ -357,7 +357,65 @@ This helps improve the page's performance. More information [here](https://css-t
 <br>
 
   ## [Base Styles]()
+  ### How to position content
+As part of best practices, there is an order in which it is recommended to write code within CSS. This will help you keep all sections organized and know where to go back to when you need to make a change or solve a problem.
 
+  * Positioning --> static, absolute, relative, fixed.
+  * Box Model --> margin, border, padding, content.
+  * Typography --> font types, sizes, etc.
+  * Visual Styles --> box-shadow, border-radius, gradient, etc.
+  * Others --> miscellaneous, CSS rules, and more.
+
+<br>
+
+  ### How to create variables
+In the Branding section of the design in Figma, we can see all the colors that are used. For now, the variables we will create will be based on these colors.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/colors.webp?raw=true" width= "50%" alt="Colors">
+</p>
+
+By clicking on the adjustment icon of each color, you can view the details. Here, we have the hexadecimal code that we need.
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/color-info.webp?raw=true" width= "50%" alt="Color info">
+</p>
+
+Remember, to declare a variable in CSS, we use the ``:root`` function and add a name to the variable that will contain the value we will use repeatedly in our code. Selecting all the colors, we would have:
+```
+:root {
+    --bitcoin-orange: #f7931a;
+    --soft-orange: #ffe9d5;
+    --secondary-blue: #1a9af7;
+    --soft-blue: #e7f5ff;
+    --warm-black: #282623;
+    --black: #201e1c;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #fff;
+}
+```
+
+<br>
+
+  ### How to reset styles
+Once the variable section is declared at the top, it is time to reset the default styles that the browser brings with the practices we already know.
+```
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+```
+
+We will also change the font size to 62.5% to make it easier to use with REM measurements. And we will change the font style that we have embedded from Google Fonts.
+```
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+```
+
+You have just applied the first styles by resetting the default ones, applying the font style, and creating the first variables of the project.
 
 <br>
 <br>

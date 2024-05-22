@@ -1,0 +1,26 @@
+/*
+1. Positioning
+2. Box model
+3. Typography
+4. Visual styles
+5. Others
+*/
+
+:root{
+  /* Colors */
+  --bitcoin-orange: #f7931a;
+  --soft-orange: #ffe9d5;
+  --secondary-blue: #1a9af7;
+  --soft-blue: #e7f5ff;
+  --warm-black: #282623;
+  --black: #201e1c;
+  --grey: #bababa;
+  --off-white: #faf8f7;
+  --just-white: #fff;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
