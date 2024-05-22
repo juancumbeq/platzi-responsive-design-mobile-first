@@ -376,6 +376,7 @@ In the Branding section of the design in Figma, we can see all the colors that a
 </p>
 
 By clicking on the adjustment icon of each color, you can view the details. Here, we have the hexadecimal code that we need.
+
 <p align="center">
   <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/color-info.webp?raw=true" width= "50%" alt="Color info">
 </p>
@@ -423,11 +424,118 @@ You have just applied the first styles by resetting the default ones, applying t
 
 # HEADER SECTION
   ## [Header Layout]()
+  ### How to layout in Figma
+First, create an ``img`` tag inside the ``header`` for the logo. Then, a ``div`` container that contains:
+
+  * ``h1`` for the main title
+  * ``p`` for the paragraph
+  * An ``a`` tag for the call to action, which also contains a ``span`` tag for the small icon next to it.
+
+The code would look like this:
+```
+<header>
+    <img src="" alt="">
+    <div>
+        <h1>The next revolution in cryptocurrency exchange</h1>
+        <p>Batatabit helps you navigate different prices and trends.</p>
+        <a href="">Check out our plans <span></span></a>
+    </div>
+</header>
+```
+
+The next step is to apply classes to call them from CSS and start applying styles.
 
 <br>
 <br>
 
   ## [BEM Architecture Implementation]()
+To name the classes of containers and contents, we will use the BEM methodology
+
+<br>
+
+  ### What is BEM?
+BEM (Block, Element, Modifier) is an agile development methodology based on components. It divides the entire interface into reusable and scalable blocks.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/bem-example.webp?raw=true" width= "50%" alt="BEM example">
+</p>
+
+This way, we can break down a section into multiple smaller sections and name them in this order and function.
+
+<br>
+
+  ### Tips for naming classes
+  * Since there won’t be another ``img`` tag within the ``header``, we can skip adding a class and refer to it specifically.
+  * The ``div`` tag is very common, so a class is necessary. We can name it ``header–title-container``, where ``header`` is the main container and ``title-container`` is the content.
+  * The ``h1`` tag is unique throughout the page, so there’s no need to add a class.
+  * Buttons are also common, so we apply the class ``header–button``.
+
+Don’t Forget:
+  * Set the image path in your img tag.
+  * Link your .css file to your index.html before starting to apply styles.
+
+<br>
+
+  ### How to Apply Styles to Classes
+Remember, we are designing for mobile first, so our view should focus on that. When checking the results in the browser, make sure to have the **Dimension: Responsive option enabled in the DevTools.**
+
+  * **Header**
+    * Apply ``position: relative``.
+    * Use ``display: flex`` and ``flex-direction: column`` to arrange it in columns.
+    * Adjust the width to 100% of the screen and the height to 334px.
+    * Limit the width to a minimum of 320px.
+    * Center the text with text-align: center.
+
+```
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 324px;
+    height: 334px;
+    text-align: center;
+}
+```
+
+  * **Img**
+    * Define the dimensions of the logo with a width of 150px and a height of 24px.
+    * Set the top margin to 60px.
+    * Since we are using display: flex in the parent container, center the logo with align-self: center.
+
+```
+header img {
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center;
+}
+```
+
+  * **Div**
+    * Call the container directly by the name of its class.
+    * Adjust the container's width to always remain 90% between 288px and 900px. That is, it won’t grow larger than 900px or shrink smaller than 288px.
+    * Set the height to 218px.
+    * Add a top margin of 40px.
+    * Center the text with ``text-align: center``.
+    * Center the container with ``align-self: center``.
+
+```
+.header--title-container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+}
+```
+You should be able to see our progress like this:
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/overview.webp?raw=true" width= "50%" alt="Overview">
+</p>
 
 <br>
 <br>
