@@ -191,7 +191,7 @@ Now you know why this standard is so important in your knowledge as a web develo
 <br>
 <br>
 
-  ## [Initial Architecture](https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/project/index.html)
+  ## [Initial Architecture](https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/index.html)
 Web architecture can be defined as the way in which the pages of a website are structured and linked to each other in a logical and coherent manner. An ideal web architecture helps users and search engines easily find what they are looking for on a website.
 
 <br>
@@ -279,10 +279,6 @@ Here is a link to a folder where all the assets to be used are separated into fo
 For this case, we will create an assets folder containing two folders to distinguish which ones we will use as icons and which as images.
 
 Rename the files so they are easy to remember, eliminating spaces to avoid conflicts with the browser when interpreting them.
-Tips for organizing project assets
-Remember:
-
-It's possible that we all get lost at some point in our learning, and that's completely normal. You always have the project's code available on GitHub to guide you and review it if you need to. However, it is just that, a guide. Always try to solve everything on your own first, as it is the only way you can really grow in the tech world—by practicing.
 
 <br>
 <br>
