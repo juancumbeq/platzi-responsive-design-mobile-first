@@ -262,7 +262,7 @@ If an asset is made up of many others and you want to download it as a single fi
 When selecting the group, follow the same steps as above to export from the right panel. Don't forget to check the preview to make sure you selected the group correctly.
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/groups-export.webp?raw=true" width= "75%" alt="Group export">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/group-export.webp?raw=true" width= "50%" alt="Group export">
 </p>
 
 And that's how we download all the images and other assets we need for our project. I recommend downloading images in .``svg`` format whenever possible, as this is the best format for use on the web.
@@ -273,7 +273,7 @@ Here is a link to a folder where all the assets to be used are separated into fo
 
   ### How to organize our assets?
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/assets-folder?raw=true" width= "75%" alt="Assets folder">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/assets-folder.webp?raw=true" width= "50%" alt="Assets folder">
 </p>
 
 For this case, we will create an assets folder containing two folders to distinguish which ones we will use as icons and which as images.
@@ -284,7 +284,67 @@ Rename the files so they are easy to remember, eliminating spaces to avoid confl
 <br>
 
   ## [Fonts Of Our Project]()
+There are various types of fonts that make up the design of a project. Remember that as part of best practices in web development, you should not have more than two fonts. If you find more than two, you will need to communicate with the design team to reach a conclusion on which ones to choose.
 
+<br>
+
+  ### How to identify the font type in Figma
+The design team may have already provided you with a report containing this information, but if not, you can identify the font from the project in Figma. To do this:
+
+  * Click on the font to inspect.
+  * In the right panel, under the inspect tab, you will see details such as size, weight, and font type. You must consider all these details when searching for them.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/figma-font.png?raw=true" width= "50%" alt="Figma font">
+</p>
+
+This way, we check all the texts to ensure the number of fonts used.
+
+<br>
+
+  ### How to download fonts for a project
+One of the best websites to find fonts is Google Fonts. To download the fonts for our project, follow these steps:
+
+  * Copy the name found in the "Inspect" tab of the selected font. Click on the font.
+
+<p align="center">
+<img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/download-font.png?raw=true" width= "50%" alt="Download font">
+</p>
+
+  * You will find various font weights. Select them based on the ones found during the inspection of our project by clicking on "Select this style." Repeat these steps with the other font if you find more than one.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/font-family.webp?raw=true" width= "50%" alt="Font family">
+</p>
+
+  * Once you have selected the fonts and weights that you will use, select the "Embed" tab in the right panel. Copy the link provided by Google Fonts.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/font-embed.webp?raw=true" width= "50%" alt="Font embed">
+</p>
+
+<br>
+
+  ### How to insert fonts in a project
+To link the copied link from the previous step, open your index.html file and go to the head section. Paste the link just below the title tag.
+
+The generated link for the project we are working on is the following:
+
+```
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+```
+
+Note: The link tag with the attribute value rel="preconnect" informs the browser that the page needs to establish a connection to another domain as quickly as possible. This way, when the browser needs to use the resources (in this case, the fonts), the resource download will be faster because the connection will already exist. This helps improve the page's performance.
+
+Remember that Google itself indicates, right below the link it provides, how to call the font family you selected.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/css-rules.webp?raw=true" width= "50%" alt="CSS Rules">
+</p>
+
+And that's it! We can now start creating our first styles.
 
 <br>
 <br>
