@@ -295,7 +295,7 @@ The design team may have already provided you with a report containing this info
   * In the right panel, under the inspect tab, you will see details such as size, weight, and font type. You must consider all these details when searching for them.
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/figma-font.png?raw=true" width= "50%" alt="Figma font">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/figma-font.webp?raw=true" width= "75%" alt="Figma font">
 </p>
 
 This way, we check all the texts to ensure the number of fonts used.
@@ -308,7 +308,7 @@ One of the best websites to find fonts is Google Fonts. To download the fonts fo
   * Copy the name found in the "Inspect" tab of the selected font. Click on the font.
 
 <p align="center">
-<img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/download-font.png?raw=true" width= "50%" alt="Download font">
+<img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/download-font.png?raw=true" width= "75%" alt="Download font">
 </p>
 
   * You will find various font weights. Select them based on the ones found during the inspection of our project by clicking on "Select this style." Repeat these steps with the other font if you find more than one.
