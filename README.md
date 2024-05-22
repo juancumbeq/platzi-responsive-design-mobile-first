@@ -191,7 +191,7 @@ Now you know why this standard is so important in your knowledge as a web develo
 <br>
 <br>
 
-  ## [Initial Architecture](https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/desktopX.png?raw=true)
+  ## [Initial Architecture](https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/project/index.html)
 Web architecture can be defined as the way in which the pages of a website are structured and linked to each other in a logical and coherent manner. An ideal web architecture helps users and search engines easily find what they are looking for on a website.
 
 <br>
@@ -231,7 +231,58 @@ To abbreviate the writing of HTML code, you can use Emmet. In this case, to writ
 <br>
 
   ## [Assets Of Our Project]()
+Let's learn how to download the resources or assets for a project from the prototype sent by the design team, in this case from Figma. It is important to have them ready when creating the code so that you only need to add them with the link.
 
+<br>
+
+  ### What are assets?
+Assets are all the static resources such as images, audio, documents, and others that we will use in our project.
+
+<br>
+
+  ### How to download assets?
+First, enter the project prototype in Figma.
+
+  * To download any resource, click on it to see its details in the right panel.
+  * Go to the "Export" tab.
+  * Choose the format in which you want to download the resource, in this case, an image.
+  * In the "Preview" tab, you see the final result of the resource.   *  The image to download has a transparent background.
+  * Click on "Export".
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/export.webp?raw=true" width= "75%" alt="Export">
+</p>
+
+If an asset is made up of many others and you want to download it as a single file, you need to select its group.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/group-assets.webp?raw=true" width= "75%" alt="Group of assets">
+</p>
+
+When selecting the group, follow the same steps as above to export from the right panel. Don't forget to check the preview to make sure you selected the group correctly.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/groups-export.webp?raw=true" width= "75%" alt="Group export">
+</p>
+
+And that's how we download all the images and other assets we need for our project. I recommend downloading images in .``svg`` format whenever possible, as this is the best format for use on the web.
+
+Here is a link to a folder where all the assets to be used are separated into folders. [Download here](https://github.com/degranda/batata-bit).
+
+<br>
+
+  ### How to organize our assets?
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/assets-folder?raw=true" width= "75%" alt="Assets folder">
+</p>
+
+For this case, we will create an assets folder containing two folders to distinguish which ones we will use as icons and which as images.
+
+Rename the files so they are easy to remember, eliminating spaces to avoid conflicts with the browser when interpreting them.
+Tips for organizing project assets
+Remember:
+
+It's possible that we all get lost at some point in our learning, and that's completely normal. You always have the project's code available on GitHub to guide you and review it if you need to. However, it is just that, a guide. Always try to solve everything on your own first, as it is the only way you can really grow in the tech world—by practicing.
 
 <br>
 <br>
