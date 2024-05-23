@@ -457,7 +457,7 @@ To name the classes of containers and contents, we will use the BEM methodology
 BEM (Block, Element, Modifier) is an agile development methodology based on components. It divides the entire interface into reusable and scalable blocks.
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/bem-example.webp?raw=true" width= "50%" alt="BEM example">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/bem-example.webp?raw=true" width= "100%" alt="BEM example">
 </p>
 
 This way, we can break down a section into multiple smaller sections and name them in this order and function.
@@ -534,13 +534,82 @@ header img {
 ```
 You should be able to see our progress like this:
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/overview.webp?raw=true" width= "50%" alt="Overview">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/overview.webp?raw=true" width= "100%" alt="Overview">
 </p>
 
 <br>
 <br>
 
   ## [Use Of ``linear-gradient``]()
+After implementing BEM, it’s time to apply the remaining styles to the header of our project, such as the gradient background, the ``h1``, and ``p`` tags.
+
+<br>
+
+ ###  How to style the background
+Let's go to the project prototype in Figma. By clicking on the background, we can see the colors it uses. In the CSS code section, we find a ``linear-gradient`` with the information we need. We copy it and add it to the header styles.
+
+```background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);```
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/linear-gradient.png?raw=true" width= "100%" alt="Linear gradient">
+</p>
+
+This code shows the color percentage distribution, giving 16.69% to black and 100% to orange. When rendering it in the browser, we see that the orange occupies more space than the black, each positioned in opposite corners.
+
+Note: If you want to create gradients easily, I recommend using CSS Gradient. It's very simple and intuitive to use.
+
+<br>
+
+  ### How to style the title
+  * We review the main title styles in the prototype, not to copy them, but just to take details like text size and weight.
+
+  <p align="center">
+    <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/how-to-style-title.webp?raw=true" width= "100%" alt="Title">
+  </p>
+
+  * We call the ``h1`` tag using the containing class name ``.header--title-container``. While we could just call the ``h1`` tag since there should only be one in the entire document, being specific is part of good practices. As you advance, you’ll use libraries like Bootstrap that may bring styles for certain tags. By being specific, the styles we apply won’t be affected by these. Always try to be specific.
+
+  * We adjust the font size with ``font-size: 2.4rem (24px)`` and the weight with ``font-weight: bold``.
+  * We set the line height with ``line-height: 2.6rem``.
+  * We change the color using the corresponding variable, ``color: var(--just-white)``.
+```
+.header--title-container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+```
+<br>
+
+  ### How to style the paragraph
+  * We call our paragraph tag from the containing class ``.header--title-container``.
+
+  <p align="center">
+    <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/how-to-style-paragraph.png?raw=true" width= "100%" alt="Paragraph">
+  </p>
+
+  * We add a top margin to separate it from the title with ``margin-top: 25px``.
+  * We adjust the size with ``font-size: 1.4rem`` and the weight with ``font-weight: 500``.
+  * We give it a line height with ``line-height: 1.8rem``.
+  * We change the font color using the corresponding variable, ``color: var(--soft-orange)``.
+
+
+```
+.header--title-container p {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+```
+
+In the browser, we should see this result:
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/styled-header?raw=true" width= "100%" alt="Styled header">
+</p>
 
 <br>
 <br>
