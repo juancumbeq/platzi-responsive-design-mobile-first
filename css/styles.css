@@ -66,3 +66,31 @@ header img{
   line-height: 1.8rem;
   color: var(--soft-orange);
 }
+.header--title-container .header-button{
+  position: absolute;
+  /* This line takes the middle of the page and substracts the half of the width defined so 230px / 2 = 115px. The left position is the result of calc() */
+  left: calc(50% - 115px);
+  top: 270px;
+  display: block;
+  margin-top: 35px;
+  padding: 15px;
+  width: 230px;
+  height: 48px;
+  background-color: var(--off-white);
+  /* Shadows */
+  box-shadow:  0 4px 8px rgba(89, 73, 30, 0.16);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--black);
+}
+.header-button span{
+  /* The dipslay is required because the span tag does not have content nd how the span tag has the display: inline by default the width and height cannot be modified (because it is adapted to the content) so the result is an invisible background. With inline block the width and height can be defined without having a content inside the tag */
+  display: inline-block;
+  width: 13px;
+  height: 8px;
+  margin-left: 10px;
+  background-image: url("../assets/icons/down-arrow.svg");
+}
