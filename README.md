@@ -663,15 +663,18 @@ It would look like this:
 <br>
 
   ### How to style the icon
-Call the span tag where we’ll create the icon from its container class with ``.header–button span``.
-Set the display to inline-block to keep it in the same space as the accompanying text.
-Set its width to 13px and height to 8px.
-Add a left margin of 10px to separate it a bit horizontally from the text.
-Call the icon file with background-image.
-How to Call an Asset from Another Folder
+  * Call the span tag where we’ll create the icon from its container class with ``.header–button span``.
+  * Set the display to inline-block to keep it in the same space as the accompanying text.
+  * Set its width to 13px and height to 8px.
+  * Add a left margin of 10px to separate it a bit horizontally from the text.
+  * Call the icon file with background-image.
+
+<br>
+
+  ### How to call an asset from another folder
 If the file you want to call is in a different folder than your .css document, you need to call the main folder.
 
-You place ../ in the URL to go to the previous folder and from there find the asset. In this case, the file is in a folder within the folder where the .css file is, so we would put url("./assets/icons/down-arrow.svg").
+You place ``../`` in the URL to go to the previous folder and from there find the asset. In this case, the file is in a folder within the folder where the .css file is, so we would put ``url("./assets/icons/down-arrow.svg")``.
 
 Remember that the URL always goes in quotes.
 ```
