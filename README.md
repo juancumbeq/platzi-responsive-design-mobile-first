@@ -657,7 +657,7 @@ Set the font size to 1.4rem and make it bold with ``font-weight: bold``.
 ```
 It would look like this:
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/floating-button?raw=true" width= "75%" alt="Floating button">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/floating-button.webp?raw=true" width= "75%" alt="Floating button">
 </p>
 
 <br>
@@ -689,7 +689,7 @@ Remember that the URL always goes in quotes.
 
 Our final result would look like this:
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/floating-button-arrow?raw=true" width= "75%" alt="Floating button arrow">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/floating-button-arrow.png?raw=true" width= "75%" alt="Floating button arrow">
 </p>
 
 We’ve finished the header! We learned and reviewed many important functions such as positioning content with flex, defining gradients, and using calc (which can save you from many symmetrical problems).
@@ -700,6 +700,86 @@ We’ve finished the header! We learned and reviewed many important functions su
 
 # EXCHANGE SECTION
   ## [Base Structure Of The Exchange Section]()
+We begin the second section of our project. To create it, we first need to analyze the design provided to us so we can start laying it out in our index.html. Let’s get to it!
+
+<br>
+
+  ### How to divide sections
+First, add an identifying class to the first of the four sections we have. Using the BEM methodology, ``class="main-exchange-container"``, create the first ``div`` container inside which we will place the image. Add the class ``backgroundImg``.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/exchange-section.png?raw=true" width= "75%" alt="Exchange section">
+</p>
+
+Create the second ``div`` container for the ``h2`` title and the ``p`` paragraph, in which we add the written content from the design. Add the class ``main-exchange-container--title``, where ``main-exchange-container`` is the block and title is the element.
+
+The tables that show the currency values are a section by themselves, so it is more correct to create a ``section`` instead of a ``div``. Place the ``div`` inside it.
+```
+<section class="main-exchange-container">
+    <div class="backgroundImg"></div>
+    <div class="main-exchange-container--title">
+        <h2>We make all exchange rates visible.</h2>
+        <p>We bring real-time information from the world's most important exchanges and currencies.</p>
+    </div>
+    <section class="main-tables-container">
+        <div></div>
+    </section>
+</section>
+```
+
+<br>
+
+  ### How to style the sections
+There are three elements to keep in mind:
+
+**Main**
+  * Adjust the width to 100% and the height to auto because the content we add will define the space it occupies.
+
+  * Add ``min-width: 320px`` to prevent distortion at smaller sizes.
+
+  * Give it a background color using the variable --off-white.
+```
+main {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    background-color: var(--off-white);
+}
+```
+
+**.main-exchange-container**
+  * Call the first main container we are working on and similarly adjust the width to 100% and the height to auto.
+
+  * Add padding-top: 80px and padding-bottom: 30px to add space both above and below.
+
+  * Align the text to the center.
+```
+.main-exchange-container {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+```
+
+**.main-exchange-container--title**
+  * Call the container of the text section and give it a width of 90%. Limit the minimum width to 288px and the maximum to 900px.
+
+  * Add ``margin: 0 auto`` so that, despite not occupying 100% of the width, it is always centered.
+```
+.main-exchange-container--title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+```
+
+So far, we will see this in the browser:
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/exchange-section-overview.png?raw=true" width= "75%" alt="Exchange section overview">
+</p>
 
 <br>
 <br>
