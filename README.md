@@ -594,7 +594,6 @@ Note: If you want to create gradients easily, I recommend using CSS Gradient. It
   * We give it a line height with ``line-height: 1.8rem``.
   * We change the font color using the corresponding variable, ``color: var(--soft-orange)``.
 
-
 ```
 .header--title-container p {
     margin-top: 25px;
@@ -615,6 +614,82 @@ In the browser, we should see this result:
 <br>
 
   ## [Use Of ``position`` For Floating Button]()
+You might have seen the button in the middle of two sections and thought: "How complicated!" But it’s not that difficult. It’s known as a floating button because it seemingly isn’t in any section but between two, giving the impression of floating in the air. The way to position it there is much simpler than it seems: by modifying its position.
+
+<br>
+
+  ### How to style the button
+Follow these steps:
+
+  * Call the button class from the container class with ``.header–title-container .header–button``.
+  * Define its position as absolute. This makes it take the relative position of its direct parent (in this case, the header) and allows us to position the content anywhere within the container. Remember, only when the position is absolute can you add top, bottom, left, and right, because it’s fixed. This doesn’t happen if its position is relative.
+  * Center it with ``left: calc(50% - 118px)``. This keeps it centered at 50%, but since the button is quite large, it subtracts 118px to the left, centering it.
+  * Move the button down from the container with ``top: 270px``.
+  * Add a top margin of 35px.
+  * Add internal padding with ``padding: 15px``.
+  * Set its width to 229px and height to 48px.
+  * Give it the corresponding background color with the variable ``--off-white``.
+  * Add a shadow to give it a floating effect.
+  * Remove any possible default border with ``border: none``.``
+  * Round the borders with ``border-radius: 5px.
+Set the font size to 1.4rem and make it bold with ``font-weight: bold``.
+  * Remove the underline with ``text-decoration: none`` and give it a black color with the created variable.
+```
+.header--title-container .header--button {
+    position: absolute;
+    left: calc(50% - 118px);
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+    /* Shadow */
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+```
+It would look like this:
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/floating-button?raw=true" width= "75%" alt="Floating button">
+</p>
+
+<br>
+
+  ### How to style the icon
+Call the span tag where we’ll create the icon from its container class with ``.header–button span``.
+Set the display to inline-block to keep it in the same space as the accompanying text.
+Set its width to 13px and height to 8px.
+Add a left margin of 10px to separate it a bit horizontally from the text.
+Call the icon file with background-image.
+How to Call an Asset from Another Folder
+If the file you want to call is in a different folder than your .css document, you need to call the main folder.
+
+You place ../ in the URL to go to the previous folder and from there find the asset. In this case, the file is in a folder within the folder where the .css file is, so we would put url("./assets/icons/down-arrow.svg").
+
+Remember that the URL always goes in quotes.
+```
+.header--button span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url("./assets/icons/down-arrow.svg");
+}
+```
+
+Our final result would look like this:
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/floating-button-arrow?raw=true" width= "75%" alt="Floating button arrow">
+</p>
+
+We’ve finished the header! We learned and reviewed many important functions such as positioning content with flex, defining gradients, and using calc (which can save you from many symmetrical problems).
 
 <br>
 <br>
