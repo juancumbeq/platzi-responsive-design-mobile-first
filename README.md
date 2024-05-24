@@ -708,7 +708,7 @@ We begin the second section of our project. To create it, we first need to analy
 First, add an identifying class to the first of the four sections we have. Using the BEM methodology, ``class="main-exchange-container"``, create the first ``div`` container inside which we will place the image. Add the class ``backgroundImg``.
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/exchange-section.png?raw=true" width= "75%" alt="Exchange section">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/exchange-section.webp?raw=true" width= "75%" alt="Exchange section">
 </p>
 
 Create the second ``div`` container for the ``h2`` title and the ``p`` paragraph, in which we add the written content from the design. Add the class ``main-exchange-container--title``, where ``main-exchange-container`` is the block and title is the element.
@@ -761,7 +761,6 @@ main {
     padding-bottom: 30px;
     text-align: center;
 }
-```
 
 **.main-exchange-container--title**
   * Call the container of the text section and give it a width of 90%. Limit the minimum width to 288px and the maximum to 900px.
