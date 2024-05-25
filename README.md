@@ -753,6 +753,7 @@ main {
   * Add padding-top: 80px and padding-bottom: 30px to add space both above and below.
 
   * Align the text to the center.
+
 ```
 .main-exchange-container {
     width: 100%;
@@ -761,6 +762,7 @@ main {
     padding-bottom: 30px;
     text-align: center;
 }
+```
 
 **.main-exchange-container--title**
   * Call the container of the text section and give it a width of 90%. Limit the minimum width to 288px and the maximum to 900px.
