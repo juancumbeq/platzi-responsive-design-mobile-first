@@ -1053,10 +1053,9 @@ This would be our final result:
   ### How to Add Table Borders
 Remember we created specific classes for the buttons situated at the corners? Now it's time to call them.
 
-Let's start with the left side of the table. Call it from its container with .currency-table--container .table__top-left.
-Add border-radius: 15px 0 0 0, where each of the four positions represents a corner of the box we are styling: top-left, top-right, bottom-right, and bottom-left, respectively.
-Apply these values to each corner.
-
+  * Let's start with the left side of the table. Call it from its container with ``.currency-table--container .table__top-left.``
+  * Add ``border-radius: 15px 0 0 0``, where each of the four positions represents a corner of the box we are styling: ``top-left``, t``op-right``, ``bottom-right``, and ``bottom-left``, respectively.
+  * Apply these values to each corner.
 ```
 .currency-table--container .table__top-left {
     border-radius: 15px 0 0 0;
@@ -1071,19 +1070,20 @@ Apply these values to each corner.
     border-radius: 0 0 15px 0;
 }
 ```
+
   ### How to Style the Price Text
-Call the class we applied to all the text in the right column with .currency-table--container .table__right.
-Adjust the size to 1.4rem and give it a normal weight.
-Add a line height of 1.7rem.
-Adjust the color to the one used in the design, #757575.
-css
-Copiar código
+  * Call the class we applied to all the text in the right column with ``.currency-table--container .table__right.``
+  * Adjust the size to ``1.4rem`` and give it a normal weight.
+  * Add a line height of ``1.7rem``.
+  * Adjust the color to the one used in the design, ``#757575``.
+```
 .currency-table--container .table__right {
     font-size: 1.4rem;
     font-weight: normal;
     line-height: 1.7rem;
     color: #757575;
 }
+```
   ### How to Add Icons
 Looking at the design, we notice there are two types of arrows: up and down. So we need to split and apply these two classes to the span tags: up and down.
 
