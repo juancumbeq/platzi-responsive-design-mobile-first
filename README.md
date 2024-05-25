@@ -786,6 +786,77 @@ So far, we will see this in the browser:
 <br>
 
   ## [Background Image]()
+Now it's time to create various styles for the text section, as well as add the background image that we have in our assets. To do this, let's continue where we left off in the project's ``.css`` document.
+
+<br>
+
+  ### Steps to add a background image
+Once you are in the project:
+
+  * Call the ``div`` tag from the main section container.
+  * First, we need to create the space it will occupy. Otherwise, we won't be able to see it. Add a width and height of 200px.
+  * Center the content with ``margin: 0 auto.
+  * Add a ``margin-bottom: 50px`` to give it some distance from the text.
+  * Add the image with ``background-image``.
+  * ``background-size: cover`` allows the image to cover the entire width while maintaining its original proportion, meaning it won't exceed the limit.
+  * ``background-position: center`` ensures that we always have a view of the center of the image, regardless of the container size.
+  * ``background-repeat: no-repeat`` prevents the image from repeating if it is smaller than the container.
+```
+.main-exchange-container .backgroundImg {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url("./assets/img/Bitcoin.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+```
+<br>
+
+  ### Steps to add text
+Within the text, you have two important elements:
+
+**Title**
+
+  * Call the ``h2`` tag from the main section container.
+  * Add a ``margin-bottom: 30px`` to separate it from the paragraph.
+  * Adjust its size to 2.4rem and make it bold with ``font-weight: bold``.
+  * Give it a line height of 2.6rem.
+  * Color it with the ``--black ``variable.
+```
+.main-exchange-container h2 {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+```
+
+**Paragraph**
+
+  * Call the ``p`` tag from the main section container.
+  * Add a ``margin-bottom: 50px`` to give it some distance from the end of the container.
+  * Adjust its size to 1.4rem and give it a weight of ``font-weight: 500``.
+  * Give it a line height of 1.6rem.
+  * Color it grey with ``color: #757575``. In this case, the color is not in a variable because it is used only once in the entire .css document.
+```
+.main-exchange-container p {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
+}
+```
+
+In the browser, we will be able to see this rendered image:
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/rendered-image.webp?raw=true" width= "75%" alt="Rendered image">
+</p>
 
 <br>
 <br>
