@@ -962,12 +962,12 @@ The rendered result in the browser would show:
 
   ## [Currency Table Base Styles]()
   ### Applying styles to the main container
-First, call the class of the main table container with main-currency-table.
-Give it a width of 70% so it doesn't take up the entire space.
-Limit the minimum width to 235px and the maximum to 500px.
-Set the height to 360px.
-Center the content with margin: 0 auto.
-Add the font used by the tables with font-family: "Inter", sans-serif.
+  * First, call the class of the main table container with ``main-currency-table``.
+  * Give it a width of 70% so it doesn't take up the entire space.
+  * Limit the minimum width to ``235px`` and the maximum to ``500px``.
+  * Set the height to ``360px``.
+  * Center the content with ``margin: 0 auto``.
+  * Add the font used by the tables with ``font-family: "Inter", sans-serif``.
 
 ```
 .main-currency-table {
@@ -981,11 +981,10 @@ Add the font used by the tables with font-family: "Inter", sans-serif.
 ```
 
   ### Applying styles to the title
-Instead of calling the class of the title and applying styles directly, remember we have two tables with different titles. Therefore, it's better to be specific by first calling the main table container and then the title like this: .main-currency-table .currency-table--title.
-
-Separate the title from the table with margin-bottom: 15px.
-Adjust the font size to 1.8rem and make it bold.
-Add a line height of 2.3rem.
+  * Instead of calling the class of the title and applying styles directly, remember we have two tables with different titles. Therefore, it's better to be specific by first calling the main table container and then the title like this: ``.main-currency-table .currency-table--title.``
+  * Separate the title from the table with ``margin-bottom: 15px``.
+  * Adjust the font size to ``1.8rem`` and make it ``bold``.
+  * Add a line height of ``2.3rem``.
 
 ```
 .main-currency-table .currency-table--title {
@@ -997,12 +996,12 @@ Add a line height of 2.3rem.
 }
 ```
 
-  ### Applying styles to the direct container
-Call the div containing the table with .currency-table--container.
-Give it a width of 90% of its parent container.
-Set a minimum width of 230px and a maximum of 300px.
-Adjust the height to 250px.
-Center the content with margin: 0 auto.
+  ### Applying styles directly to the container
+  * Call the ``div`` containing the table with ``.currency-table--container``.
+  * Give it a width of ``90%`` of its parent container.
+  * Set a minimum width of ``230px`` and a maximum of ``300px``.
+  * Adjust the height to ``250px``.
+  * Center the content with ``margin: 0 auto``.
 
 ```
 .currency-table--container {
@@ -1014,8 +1013,8 @@ Center the content with margin: 0 auto.
 }
 ```
   ### Applying styles to the table
-Call the table tag from its parent container with .currency-table--container table.
-Give it a width and height of 100% to occupy the entire space of the parent container.
+  * Call the ``table`` tag from its parent container with ``.currency-table--container table``.
+  * Give it a width and height of ``100%`` to occupy the entire space of the parent container.
 
 ```
 .currency-table--container table {
@@ -1024,17 +1023,17 @@ Give it a width and height of 100% to occupy the entire space of the parent cont
 }
 ```
   ### Applying styles to the cells
-Call the td tag from its parent container with .currency-table--container td.
-Give it a width of 50% as they take up half the space of the rows.
-Adjust the font size to 1.6rem and set the weight to 500.
-Add a line height of 1.9rem.
-Change the color using the --grey variable.
-Add a background color using the --just-white variable.
+  * Call the ``td`` tag from its parent container with ``.currency-table--container td``.
+  * Give it a width of ``50%`` as they take up half the space of the rows.
+  * Adjust the font size to ``1.6rem`` and set the weight to ``500``.
+  * Add a line height of ``1.9rem``.
+  * Change the color using the ``--grey variable``.
+  * Add a background color using the ``--just-white`` variable.
 
 ```
 .currency-table--container td {
     width: 50%;
-    font-size: 1.6rem;
+    font-size: 1.6rem;``
     font-weight: 500;
     line-height: 1.9rem;
     color: var(--grey);
@@ -1046,8 +1045,6 @@ This would be our final result:
 <p align="center">
   <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/final-table.webp?raw=true" width= "75%" alt="Final table">
 </p>
-
-Great! We've laid out the table for the first section of the project. Remember, there's still another one which is part of your challenge. Now, let's get those styles for the tables!
 
 <br>
 <br>
