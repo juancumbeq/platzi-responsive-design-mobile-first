@@ -862,6 +862,100 @@ In the browser, we will be able to see this rendered image:
 <br>
 
   ## [Currency Table Structure]()
+Let's create the code for the tables in our project. We see in the design a total of two tables.
+
+<br>
+
+  ### Steps to layout the table
+  * Go to the section we created earlier with the class ``main-tables-container``.
+  * Inside the ``div``, create a ``p`` tag for the text "Monedas".
+  * Below, create another ``div`` tag that will contain the ``table`` tag, which is the table itself.
+  * We work with two additional tags: ``tr`` (table row) for the rows and ``td`` (table data) for the data in each row.
+  * Add the corresponding information based on the design we are working on.
+
+```
+<section class="main-tables-container">
+    <div>
+        <p>Monedas</p>
+        <div>
+            <table>
+                <tr>
+                    <td>Bitcoin</td>
+                    <td>$1.96</td>
+                </tr>
+                <tr>
+                    <td>Ethereum</td>
+                    <td>$0.07</td>
+                </tr>
+                <tr>
+                    <td>Ripple</td>
+                    <td>$2.15</td>
+                </tr>
+                <tr>
+                    <td>Stellar</td>
+                    <td>$4.96</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+```
+You will see that the information is organized as if it were an Excel table. Each cell occupies an equal space and is organized one below the other.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/table.webp?raw=true" width= "75%" alt="Table">
+</p>
+
+<br>
+
+  ### How to add classes
+Start adding classes to apply styles.
+
+  * Name the first ``div`` as ``main-currency-table`` because it is the table of current values.
+  * Name the ``p`` tag as ``currency-table--title`` as the title of the container.
+  * Name the ``div`` containing the table as ``currency-table--container``.
+  * There is no need to add classes to the table tag or the rows, but the content does need them. For example, the first would be ``table__top-left``. We use a double underscore because, according to the BEM methodology, it differentiates an element (table) from a block and a modifier (top_left).
+  * Add two classes to the price: ``table__top-right and table-right``. This is because the name column and the price column have different styles. This way, we can call a single class and apply styles to all that contain it.
+  * Add the class ``table-right`` to all the ce``lls with prices in the table. For the last cell, first place the class ``table__bottom-right`` because it is the last one.
+  * Add the class ``table__bottom-left`` to the last row of the table. As you can see, only the first and last rows have additional classes.
+  * We only need the container where the information is updated. Create it outside the ``div`` containing the table and add a ``p`` tag for the text it contains.
+  * Highlight the word shown in bold by placing it within the ``b`` tag.
+  * Finally, add the class ``currency-table--date`` to the newly created container to apply styles to it.
+```
+<section class="main-tables-container">
+    <div class="main-currency-table">
+        <p class="currency-table--title">Monedas</p>
+        <div class="currency-table--container">
+            <table>
+                <tr>
+                    <td class="table__top-left">Bitcoin</td>
+                    <td class="table__top-right table-right">$1.96 <span></span></td>
+                </tr>
+                <tr>
+                    <td>Ethereum</td>
+                    <td class="table-right">$0.07</td>
+                </tr>
+                <tr>
+                    <td>Ripple</td>
+                    <td class="table-right">$2.15</td>
+                </tr>
+                <tr>
+                    <td class="table__bottom-left">Stellar</td>
+                    <td class="table__bottom-right table-right">$4.96</td>
+                </tr>
+            </table>
+        </div>
+        <div class="currency-table--date">
+            <p><b>Actualizado:</b> 19 de julio 23:45</p>
+        </div>
+    </div>
+</section>
+```
+The rendered result in the browser would show:
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/rendered-table.webp?raw=true" width= "75%" alt="Rendered table">
+</p>
 
 <br>
 <br>
