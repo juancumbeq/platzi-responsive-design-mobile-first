@@ -1050,6 +1050,79 @@ This would be our final result:
 <br>
 
   ## [Detailing Currency Table Styles]()
+  ### How to Add Table Borders
+Remember we created specific classes for the buttons situated at the corners? Now it's time to call them.
+
+Let's start with the left side of the table. Call it from its container with .currency-table--container .table__top-left.
+Add border-radius: 15px 0 0 0, where each of the four positions represents a corner of the box we are styling: top-left, top-right, bottom-right, and bottom-left, respectively.
+Apply these values to each corner.
+
+```
+.currency-table--container .table__top-left {
+    border-radius: 15px 0 0 0;
+}
+.currency-table--container .table__top-right {
+    border-radius: 0 15px 0 0;
+}
+.currency-table--container .table__bottom-left {
+    border-radius: 0 0 0 15px;
+}
+.currency-table--container .table__bottom-right {
+    border-radius: 0 0 15px 0;
+}
+```
+  ### How to Style the Price Text
+Call the class we applied to all the text in the right column with .currency-table--container .table__right.
+Adjust the size to 1.4rem and give it a normal weight.
+Add a line height of 1.7rem.
+Adjust the color to the one used in the design, #757575.
+css
+Copiar código
+.currency-table--container .table__right {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+}
+  ### How to Add Icons
+Looking at the design, we notice there are two types of arrows: up and down. So we need to split and apply these two classes to the span tags: up and down.
+
+Call the span tags with their class from the table container with .currency-table--container .down.
+Use display: inline-block to keep the icon on the same line as the text.
+Give it a width and height of 15px.
+Add margin-left: 10px to separate it from the text.
+Call the image from its location with background-image: url("").
+Adjust its size to the container with cover, center it, and specify that the image should not repeat.
+Apply the same styles for the class .currency-table--container .up, just changing the icon URL.
+
+```
+.currency-table--container .down {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url("./assets/icons/trending-down.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.currency-table--container .up {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url("./assets/icons/trending-up.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+```
+This would be our result on screen:
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/final-table-images.png?raw=true" width= "75%" alt="Final table images">
+</p
+
+Great, right? Now you just need to apply the same to the other table. Remember, there's not just one way to achieve this, but as many ways as there are programmers. The important thing is to try it. You'll see it's very simple.
 
 <br>
 <br>
