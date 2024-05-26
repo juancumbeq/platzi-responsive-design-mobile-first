@@ -1126,6 +1126,40 @@ This would be our result on screen:
 <br>
 
   ## [Finishing Currency Table Styles]()
+  ### How to add styles
+  * First, give it a width of ``190px`` and a height of ``30px`` to create the space.
+  * Center it with ``margin: 0 auto``.
+  * Separate it from the table with ``margin-top: 15px``.
+  * Create internal spacing with ``padding: 8px``.
+  * Adjust its background color using the variable ``--soft-orange``.
+  * Round the corners with ``border-radius: 8px``.
+```
+.currency-table--date {
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--soft-orange);
+    border-radius: 8px;
+}
+```
+  ### How to style the text
+  * To style the text, call the ``p`` tag from the table container with ``.currency-table--date p``.
+  * Adjust its size to ``1.2rem`` and give it a line height of ``1.5rem``.
+  * Finally, change the color using the variable ``--warm-black``.
+```
+.currency-table--date p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warm-black);
+}
+```
+This would be the result:
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/update.webp?raw=true" width= "75%" alt="Update">
+</p>
 
 <br>
 <br>
@@ -1133,11 +1167,148 @@ This would be our result on screen:
 
 # BENEFITS SECTION
   ## [Base Structure Of The Benefits Section]()
+  ### Structure analysis
+At the start, we find a floating logo that we already learned to position with position: absolute. We have some other icons that we can place in span tags and several containers with text boxes.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/benefits-structure.png?raw=true" width= "75%" alt="Benefits structure">
+</p>
+
+The image only covers the first box, as the following ones have the same structure.
+
+  ### How to Layout
+  * Open the second section and give it a class based on its content. Since it details what the Batatabit product is, the name could be ``main-product-detail``.
+  * Create the class for the main title container with ``product-detail--title``.
+  * Create the tags we previously found in the design, such as ``span``, ``h2``, ``p``, ``section``, and ``article``.
+  * Create the class ``product-detail--batata-logo`` for the span tag that will contain our logo.
+
+Within the first article:
+  * The first ``p`` tag will be the card title, and its class name will be ``product--card-title``, following the block-element structure.
+  * The second ``p`` tag will be the card body, and its class name will be ``product--card-body``.
+  * Finally, add the content inside each text tag.
+
+```
+<section class="main-product-detail">
+    <span class="product-detail--batata-logo"></span>
+    <div class="product-detail--title">
+        <h2>We created an unmatched product.</h2>
+        <p>Reliable and designed for daily use.</p>
+    </div>
+    <section class="product-cards--container">
+        <article class="product-detail--card">
+            <span class="clock"></span>
+            <p class="product--card-title">Real-time</p>
+            <p class="product--card-body">Our API takes minute-by-minute information about the rates that most determine behavior.</p>
+        </article>
+    </section>
+</section>
+```
 
 <br>
 <br>
 
   ## [Benefits Section Styles]()
+In the base structure of the benefits section, we laid out the necessary tags and their respective classes to start applying styles.
+
+  ### Applying styles to the main container
+  * We call the section container class with ``.main-product-detail``. 
+  * We assign it a ``position: relative``. This is because the floating logo container will be created with ``position: absolute``. For an element with ``position: absolute`` to be positioned correctly, it looks for the first parent container that has ``position: relative``. That's why we set it here so that it remains within this container.
+  * We set its width to ``100%`` and limit it to a minimum of ``320px``. 
+  * We set the height to ``auto`` so that it adjusts to the content. We add padding of ``20px`` at the top and bottom and ``10px`` on the sides.
+
+```
+.main-product-detail {
+    position: relative; /* This is to ensure that the floating logo container, which will be created with position: absolute, is positioned correctly. */
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--warm-black);
+}
+```
+  ### Steps to style the logo
+  * We call the class directly of the ``span`` tag for the logo with .``product-detail--batata-logo``. 
+  * We assign it a ``position: absolute`` so that it floats above other elements.
+  * We set its width to ``40px`` and height to ``25px``.
+
+  To center it between the two sections:
+  * We lift half of the logo outside of the container with ``top: -10px``. 
+  * We center it with ``left: calc(50% - 20px)``, where ``50%`` places it in the middle, but it’s not centered yet. This is because the logo has dimensions (``40px`` to be precise), and since we want it exactly in the middle, we subtract half of its width (``20px``), positioning it right in the center.
+  * We call the image with ``background-image: url("")``.
+
+```
+.product-detail--batata-logo {
+    position: absolute; /* Ensures it floats above other elements */
+    width: 40px;
+    height: 25px;
+    top: -10px; /* Lifts the logo halfway out of the container */
+    left: calc(50% - 20px); /* Centers the logo by adjusting for its width */
+    background-image: url("./assets/icons/batata.svg");
+}
+```
+  ### Adding styles to the title
+Consider these three elements:
+
+**Container:**
+  * We call the class of our title container with ``.product-detail--title``. 
+  * We adjust its width to occupy ``90%`` of its main container. 
+  * We set the minimum width to ``288px``. 
+  * We set the height to ``auto`` so that it occupies what the text needs.
+  * This is a good practice so that the text reacts well regardless of how much it is compressed by the width. 
+  * The center it with ``margin: 0 auto``. 
+  * We separate the text from the top edge with ``margin-top: 50px``. We center the text with ``text-align: center``.
+```
+.product-detail--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto; /* Adjusts to the content's height */
+    margin: 0 auto; /* Centers the container */
+    margin-top: 50px; /* Separates the text from the top edge */
+    text-align: center; /* Centers the text */
+}
+```
+
+**H2:**
+  * We call the ``h2`` tag from its direct container with ``.product-detail--title h2``. 
+  * We apply ``margin-bottom: 20px`` to separate it from the paragraph below. 
+  * We adjust the font size to ``2.4rem`` and apply a ``bold`` weight. 
+  * We set the line height to ``2.6rem``. 
+  * We change the color with the variable ``--just-white``.
+```
+.product-detail--title h2 {
+    margin-bottom: 20px; /* Separates it from the paragraph below */
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+```
+
+**Paragraph:**
+  * We call the ``p`` tag from its direct container with ``.product-detail--title p``. 
+  * We apply ``margin-bottom: 20px`` to separate it from the sections below. 
+  * We adjust the font size to ``1.4rem`` and apply a weight of ``500``. 
+  * We set the line height to ``1.8rem``. 
+  * We change the color to ``#808080`` as indicated in the Figma design.
+```
+.product-detail--title p {
+    margin-bottom: 20px; /* Separates it from the sections below */
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080; /* As specified in the Figma design */
+}
+```
+Observing the Result in the Browser
+You should see a structure similar to this:
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/article-result.webp?raw=true" width= "75%" alt="Article result">
+</p>
+
+  ### Summary
+
+We remembered an important aspect of ``position: absolute`` and its direct relationship with its parent having ``position: relative``.
 
 <br>
 <br>
