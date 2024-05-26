@@ -1227,11 +1227,12 @@ In the base structure of the benefits section, we laid out the necessary tags an
 }
 ```
   ### Steps to style the logo
-  * We call the class directly of the ``span`` tag for the logo with .``product-detail--batata-logo``. 
+  * We call the class directly of the ``span`` tag for the logo with ``.product-detail--batata-logo``. 
   * We assign it a ``position: absolute`` so that it floats above other elements.
   * We set its width to ``40px`` and height to ``25px``.
 
   To center it between the two sections:
+
   * We lift half of the logo outside of the container with ``top: -10px``. 
   * We center it with ``left: calc(50% - 20px)``, where ``50%`` places it in the middle, but it’s not centered yet. This is because the logo has dimensions (``40px`` to be precise), and since we want it exactly in the middle, we subtract half of its width (``20px``), positioning it right in the center.
   * We call the image with ``background-image: url("")``.
@@ -1306,7 +1307,7 @@ You should see a structure similar to this:
   <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/article-result.webp?raw=true" width= "75%" alt="Article result">
 </p>
 
-  ### Summary
+  ### Summary
 
 We remembered an important aspect of ``position: absolute`` and its direct relationship with its parent having ``position: relative``.
 
@@ -1314,6 +1315,86 @@ We remembered an important aspect of ``position: absolute`` and its direct relat
 <br>
 
   ## [Layout Of Benefits Cards]()
+After applying the styles in the benefits section, we will create the styles for the cards in the second section we are working on.
+
+Of course, we start with the container and then the content.
+
+  ### Creating styles for the container
+  * We call the class of the container of the first card with ``.product-detail–card``. 
+  * We adjust its width to ``90%`` and height to ``150px``. 
+  * We set a minimum width of ``288px`` and a maximum of ``400px``. 
+  * This is to prevent it from growing too much and getting distorted on very large screens. 
+  * We add a top and bottom margin of ``15px`` and make it auto on the sides to center it. 
+  * We add a padding of ``15px``. 
+  * We set a background color of ``–-black`` to contrast with the main container's color. We round its corners with ``border-radius: 5px``. 
+  * We create a shadow for the box with ``box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16)``.
+```
+.product-detail--card {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+```
+  ### Applying styles to the icon
+  * We call the class of our ``span`` tag from its container class. 
+  * We set ``display: inline-block`` so that the icon occupies a line of space. 
+  * We set its height and width to ``20px``. 
+  * We add a ``margin-bottom: 10px``. 
+  * We add the icon with ``background-image: url("")``. 
+  * We adjust it to cover the entire box, center it, and ensure the image does not repeat.
+```
+.product-detail--card .clock {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url("./assets/icons/clock.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+```
+  ### Applying styles to the text
+Consider the following two elements:
+
+**Title:**
+  * We call the tag that contains our title by its class name with ``.product–card-title``. 
+  * We set a ``margin-bottom: 15px``. 
+  * We adjust the font size to ``1.8rem`` and set it to ``bold``. 
+  * We adjust the line height to ``1.8rem`` and set the color with the variable ``–-just-white``.
+```
+.product--card-title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+```
+
+**Body:**
+  * We call the tag that contains our body text by its class name with ``.product–card-body``. 
+  * We adjust the font size to ``1.4rem`` and set it to a weight of ``500``. 
+  * We adjust the line height to ``1.8rem`` and set the color to ``#808080``.
+```
+.product--card-body {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+```
+
+The card would look like this:
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/product-card.png?raw=true" width= "75%" alt="Product card">
+</p>
 
 <br>
 <br>
