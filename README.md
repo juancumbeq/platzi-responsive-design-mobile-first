@@ -1392,9 +1392,7 @@ Consider the following two elements:
 ```
 
 The card would look like this:
-<p align="center">
-  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/product-card.png?raw=true" width= "75%" alt="Product card">
-</p>
+
 
 <br>
 <br>
@@ -1402,11 +1400,120 @@ The card would look like this:
 
 # PLANS SECTION
   ## [Layout Of Comodin Section]()
+You might have encountered an issue with one of the containers where the content overflowed, causing an overflow.
+
+This type of problem occurs because we defined an absolute height for the boxes. Pixel measurements are absolute values that do not change regardless of the container's size, while percentages are relative values that adapt to the screen size. However, in this case, all we need to do is add a minimum width, below which it cannot shrink further.
+
+For this, we go to the container class of the cards ``.product-detail–card`` and limit the minimum width to ``150 pixels``, like so:
+```
+min-height: 150px;
+```
+
+This way, it will always have a minimum height of ``150px``, but if it needs more, it will grow.
+
+  ### Laying out the wildcard section
+The analysis of this section is very simple. We only find a couple of elements that we need to create: a title and a background image.
+
+  ### Layout
+The first thing is to open the next section in our ``index.html`` and add a class to identify it. We create an ``h2`` to apply the title.
+```
+<section class="bitcoin-img-container">
+    <h2>Learn about it today</h2>
+</section>
+```
+
+  ### Container styles
+  * We call the section by its class with ``.bitcoin-img-container``. 
+  * We adjust the width to ``100%`` of the screen and limit it to ``320px``. 
+  * We give it a height of ``50%`` of the screen height with ``height: 50vh``. 
+  * We call the background image with ``background-image: url("")``. 
+  * We center the image with respect to the container with ``center``. 
+  * It is important to set ``background-repeat: no-repeat`` so that the image does not duplicate when moving to larger dimensions, such as a laptop.
+```
+.bitcoin-img-container {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url("./assets/img/bitcoinbaby2x.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+```
+
+  ### Text styles
+  * We call the ``h2`` tag from its container with ``.bitcoin-img-container h2``. 
+  * We add a top padding of ``60px``. 
+  * We adjust the font size to ``2.4rem`` and set it to ``bold``. 
+  * We give it a line height of ``2.6rem``. 
+  * We change its color with the variable ``–just-white``.
+```
+.bitcoin-img-container h2 {
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+```
+
+Our result in the browser would be the following:
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/background-image-btc.png?raw=true" width= "75%" alt="BTC">
+</p>
+
+As you can see, when reducing or enlarging the width, the section we created always occupies half the screen's height, stretching the image to the side edges.
 
 <br>
 <br>
 
   ## [Plans Section Structure]()
+We are in the last section of our project where we will be creating the HTML structure to later apply the necessary styles. First, let's analyze the visual content to determine the tags we will use.
+
+  ### Design analysis for the plans section
+We have several elements to observe:
+
+  * A primary container with the main title and description.
+  * Then a section for the three cards with the prices, each card in its own article container.
+  * Inside each card, we find text in a floating box, another with the payment type, another with the price, another with the plan description, and finally, a button with an icon beside it.
+
+Example of section design:
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/plans-section.webp?raw=true" width= "75%" alt="Plans section">
+</p>
+
+  ### How to layout
+Knowing the tags we need to use, we start laying out our structure:
+```
+<section id="plans" class="main-plans-container">
+    <div class="plans--title">
+        <h2>Choose the plan that best suits you.</h2>
+        <p>Any plan gives you full access to our platform.</p>
+    </div>
+    <section class="plans-container--slider">
+        <article class="plans-container--card">
+            <p class="recomended">Recommended</p>
+            <div class="plan-info-container">
+                <h3 class="plan-card--title">Annual Payment</h3>
+                <p class="plan-card--price"><sup>$</sup> 99</p>
+                <p class="plan-card--saving">*Save $129 compared to the monthly plan.</p>
+                <button class="plan-card--ca">Choose this <span></span></button>
+            </div>
+        </article>
+    </section>
+</section>
+```
+Remember that you can create the entire structure with a single line of code using Emmet, like this:
+```
+(div>h2+p)+section>article>p+div>h3+p*2+button
+```
+  * We add an ID to the main section to link it with the "See our plans" button that we designed in the header section. We use the same name for both the button anchor and the section ID. 
+
+  * We create a sup tag for the dollar sign displayed next to the price. This tag defines a piece of text that should be shown, for typographic reasons, higher and usually smaller than the main text. 
+
+  * We add descriptive names to each generic tag and fill in the spaces with the respective content. And thus, we finish creating the structure of this last section. Now let's go for those styles.
 
 <br>
 <br>
