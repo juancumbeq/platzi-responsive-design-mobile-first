@@ -1322,11 +1322,11 @@ Of course, we start with the container and then the content.
   ### Creating styles for the container
   * We call the class of the container of the first card with ``.product-detail–card``. 
   * We adjust its width to ``90%`` and height to ``150px``. 
-  * We set a minimum width of ``288px`` and a maximum of ``400px``. 
-  * This is to prevent it from growing too much and getting distorted on very large screens. 
+  * We set a minimum width of ``288px`` and a maximum of ``400px``. This is to prevent it from growing too much and getting distorted on very large screens. 
   * We add a top and bottom margin of ``15px`` and make it auto on the sides to center it. 
   * We add a padding of ``15px``. 
-  * We set a background color of ``–-black`` to contrast with the main container's color. We round its corners with ``border-radius: 5px``. 
+  * We set a background color of ``–-black`` to contrast with the main container's color. 
+  * We round its corners with ``border-radius: 5px``. 
   * We create a shadow for the box with ``box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16)``.
 ```
 .product-detail--card {
