@@ -1519,16 +1519,199 @@ Remember that you can create the entire structure with a single line of code usi
 <br>
 
   ## [Applying Styles To The Plans Section]()
+Now we are going to apply styles to our plans section. This time, we will work on the main container and the text box. We will apply styles to the cards section later.
+
+
+  ### Calling the main container
+  * Call the main section with its class ``.main-plans-container``.
+  * Set its width to ``100%`` and limit it to a minimum of ``320px``.
+  * Create a bottom internal spacing of ``70px``.
+  * Center all contained text with ``text-align: center``.
+```
+.main-plans-container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+```
+
+  ### How to apply styles to the title container
+  * Call the main text container with its class ``.plans–-title``.
+  * Set its width to ``90%`` and limit it to a minimum of ``288px``.
+  * Set the height to ``auto`` so it automatically adjusts based on the space occupied by the text.
+  * Center it with ``margin: 0 auto ``to account for the remaining ``10%`` width.
+  * Create a bottom margin of ``50px`` to separate it from the cards.
+```
+.plans--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+```
+  ### Title
+  * Call the ``h2`` tag from its direct container with ``.plans–-title h2``.
+  * Adjust the font size to ``2.4rem`` and set its weight to ``bold``.
+  * Add a line-height of ``2.6rem`` and change its color with the ``--black`` variable.
+```
+.plans--title h2 {
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+```
+  ### Description
+  * Call the ``p`` tag from its direct container with ``.plans–title p``.
+  * Adjust the font size to ``1.4rem`` and set its weight to ``500``.
+  * Add a line-height of ``1.8rem`` and change its color to ``#757575``.
+```
+.plans--title p {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+```
+This would be the result we get in the browser:
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/plans-section-header.webp?raw=true" width= "75%" alt="Plans section header">
+</p>
 
 <br>
 <br>
 
   ## [Applying Styles To The Plans Section Cards]()
+It's time to work on the cards for the plans section. As you know, there are a total of three cards with very similar information. They have practically the same structure.
+
+  ### Card container
+First, call the class of the card container with ``.plans-container–-card``.
+
+  * Use ``position: relative`` to ensure that the floating text stays within this container.
+  * Set its width to ``70%`` so that part of the other two cards can be seen.
+  * Limit its minimum width to ``230px`` and its maximum width to ``300px``.
+  * Set its absolute height to ``250px``.
+  * Add a top margin of ``50px`` and a bottom margin of ``0px``. Center the box with ``auto``.
+  * Create a top and bottom padding of ``0``, and ``15px`` on the sides.
+  * Change the background color of the card to contrast with the background color of its container using the ``--just-white`` variable.
+  * Round the corners of the card with ``border-radius: 15px``.
+  * Generate a shadow for the box with ``box-shadow``.
+```
+.plans-container--card {
+    position: relative;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto 0;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+```
+This is the result we can observe in the browser:
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/recommended-plan.png?raw=true" width= "75%" alt="Recommended plan">
+</p>
+
+The container is now finished. If you notice, when the width of the screen is enlarged or reduced, the container grows and shrinks up to a limit, always staying centered. We still need to add some styles so you can start creating the other two cards. Great!
 
 <br>
 <br>
 
   ## [Detailing Styles On Plan Cards]()
+The next step to finish your plans section is to add styles to the cards. Let's go to our stylesheet.
+
+  ### Adding styles to the plan cards
+Consider the following elements:
+
+  ### Floating button
+  * Call the class of the paragraph with ``.recommended``.
+  * Set its position to ``absolute`` to move it within the container.
+  * Adjust its width to ``120px`` and height to ``31px``.
+  * Move it up out of the container with ``top: -15px``.
+  * Center the box with ``left: calc(50% - 60px)``.
+  * Set the font size to ``1.2rem``.
+  * Add padding on all sides with ``padding: 6px``.
+  * Adjust the background color with the variable ``--bitcoin-orange`` and the text color with ``--just-white``.
+  * Round the corners of the box with ``border-radius: 8px``.
+```
+.recommended {
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    top: -15px;
+    left: calc(50% - 60px);
+    font-size: 1.2rem;
+    padding: 6px;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    color: var(--just-white);
+}
+```
+
+  ### Title
+  * Call the class of the h3 tag with ``.plan-card–-title``.
+  * Add top padding with ``padding-top: 30px``.
+  * Set the font size to ``1.4rem`` and font weight to ``500``.
+  * Add a line height of ``1.8rem``.
+  * Adjust the text color with the variable ``--black``.
+```
+.plan-card--title {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+```
+
+  ### Price
+  * Call the class of the p tag with ``.plan-card–-price``.
+  * Add top and bottom padding of ``30px`` and ``0`` on the sides.
+  * Set the font size to ``5.2rem`` and font weight to ``bold``.
+  * Add a line height of ``5.3rem``.
+  * Adjust the text color with the variable ``--black``.
+
+For the dollar sign:
+
+  * Call the ``sup`` tag from its container class with ``.plan-card-–price sup``.
+  * Set the font size to ``1.2rem`` and font weight to ``300``.
+  * Position the sign at the top with ``vertical-align: 25px``.
+```
+.plan-card--price {
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: var(--black);
+}
+```
+.plan-card--price sup {
+    font-size: 1.2rem;
+    font-weight: 300;
+    vertical-align: 25px;
+}
+
+  ### Description
+  * Call the paragraph tag with its class ``.plan-card–saving``.
+  * Set the font size to ``1.2rem`` and change its color to ``#757575``.
+```
+.plan-card--saving {
+    font-size: 1.2rem;
+    color: #757575;
+}
+```
+So far, this would be our result on the screen:
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/recomended-styles.png?raw=true" width= "75%" alt="Recommended plan styles">
+</p>
 
 <br>
 <br>
