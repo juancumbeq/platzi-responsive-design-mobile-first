@@ -1674,7 +1674,7 @@ Consider the following elements:
 
   ### Price
   * Call the class of the p tag with ``.plan-card–-price``.
-  * Add top and bottom padding of ``30px`` and ``0`` on the sides.
+  * Add top and bottom padding of ``5px`` and ``0`` on the sides.
   * Set the font size to ``5.2rem`` and font weight to ``bold``.
   * Add a line height of ``5.3rem``.
   * Adjust the text color with the variable ``--black``.
@@ -1772,6 +1772,64 @@ And with this, we finish the styles for this card! All that's left is the slide 
 <br>
 
   ## [Horizontal Scroll With CSS]()
+Now that you have finished applying styles to the cards, we need to create this horizontal scroll that is generated when navigating between them.
+
+As a front-end developer, you will often use frameworks to speed up your creation process, such as to create these types of effects. However, for this occasion, we will use only CSS with the intention of understanding how they are constructed.
+
+First, for our container to generate the scroll between the cards, they need to have it. We center all the cards to create a scroll with ``scroll-snap-align: center``. Place this line just below the position: relative of our card container.
+```
+.plans-container--card {
+    position: relative;
+    scroll-snap-align: center;
+    ...
+}
+```
+  ### How to create a scroll
+  * Call the class of the card container with ``.plans-container–-slider``.
+  * ``display: flex`` already generates a horizontal scroll, but it overflows the container and creates an overflow outside.
+  * Set its height to ``316px``, greater than the card containers.
+  * Generate a scroll on the x-axis with ``overflow-x: scroll``. This property sets what is shown when content overflows the left and right edges of a block-level element. It can be nothing, a scrollbar, or the extra content.
+  * ``overscroll-behavior`` sets what a browser does when it reaches the limit of a scroll area.
+  * To make the view center on each card as if they had a magnet when scrolling over them, use ``scroll-snap-type: x`` proximity.
+```
+.plans-container--slider {
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+```
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/scroll-render.webp?raw=true" width= "75%" alt="Scroll render">
+</p>
+
+In the browser, we can see that the cards are stuck to each other. In CSS, there is a new property called gap that helps us solve this problem.
+
+Currently, gap is supported by almost all browsers. However, to use a new property, we must at least confirm that it has 95% availability to avoid giving users a bad experience.
+
+You can check on the [Can I Use](https://caniuse.com/) website, among other things, the number of browsers in which a property is available. In this case, to solve it, let's go to the card container and look for the margin property.
+```
+.plans-container--card {
+    ...
+    margin: 50px auto 0;
+    ...
+}
+```
+Change the auto attribute to 15px.
+```
+.plans-container--card {
+    ...
+    margin: 50px 15px 0;
+    ...
+}
+```
+And we would have this result:
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/scroll-final-render.webp?raw=true" width= "75%" alt="Scroll render">
+</p>
+
+And so, we have completely finished this last section of plans. You might be wondering about the navigation icons on the sides. Of course, there is still more that can be done using JavaScript and adding interactions on click, but we'll leave that to you. You already know how to build a scroll using only CSS, and that's pretty cool.
 
 <br>
 <br>

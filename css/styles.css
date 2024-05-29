@@ -394,11 +394,13 @@ main{
 }
 .plans-container--card{
   position: relative;
+  /* scroll */
+  scroll-snap-align: center;
   width: 70%;
   min-width: 230px;
   max-width: 300px;
   height: 250px;
-  margin: 50px auto 0;
+  margin: 50px 15px 0;
   padding: 0 15px;
   background-color: var(--just-white);
   border-radius: 15px;
@@ -408,10 +410,10 @@ main{
   position: absolute;
   width: 120px;
   height: 31px;
+  padding: 6px;
   top: -15px;
   left: calc(50% - 60px);
   font-size: 1.2rem;
-  padding: 6px;
   background-color: var(--bitcoin-orange);
   color: var(--just-white);
   border-radius: 8px;
@@ -424,7 +426,7 @@ main{
   color: var(--black);
 }
 .plan-card--price{
-  padding: 30px 0;
+  padding: 5px 0;
   font-size: 5.2rem;
   font-weight: bold;
   line-height: 5.3rem;
@@ -459,4 +461,13 @@ main{
   height: 20px;
   background-image: url("../assets/icons/orange-right-arrow.svg");
   vertical-align: text-bottom;
+}
+.plans-container--slider{
+  display: flex;
+  height: 316px;
+  overflow-x: scroll;
+  /* avoid showing a white edge */
+  overscroll-behavior-x: contain;
+  /* creates a magnet to center the selected card */
+  scroll-snap-type: x proximity;
 }
