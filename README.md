@@ -2003,16 +2003,39 @@ Now, we just need to evaluate the page we have created to check for accessibilit
 
 # LIGHTHOUSE
   ## [Analysis With Lighthouse]()
+Remember, we cannot improve what we cannot measure. For this, we will use the Lighthouse tool, which helps us measure accessibility, performance, best practices, among other things. You won't have to worry about installing anything, as it is embedded in Chrome's DevTools.
 
-<br>
-<br>
-<br>
+  ### How to access lighthouse
+  * Open the project in your browser.
+  * Right-click on any part of the project. Click on “Inspect” to open the DevTools.
+  * Expand the tab section and select “Lighthouse”.
+  * You will see various options that can be analyzed. You can select all or the ones you need. Only one report can be generated per mobile or desktop version. If you want both, generate another report with the missing option.
+  * Once you have made your selection, click on “Generate Report”. Wait for it to finish generating.
+  * Analyze the results.
+  
+  ### How to monitor performance
+Keep in mind that you should not get frustrated by imperfect results. As long as it is above 90%, it means your page is **well-constructed**. This is because many factors determine these statistics, such as a poor internet connection, a bad computer, or some other issue beyond your control.
 
-# NEXT STEPS
-  ## [Close And Next Steps]()
+The lowest value is performance, or the loading speed of our page. Review the reasons by clicking on the same value.
+
+All the details that were found will be displayed. Go to the opportunities section.
+
+When expanding each of the suggestions made by the tool, we find that the image in the wildcard section is somewhat heavy. It even recommends compressing it to improve the score.
+
+We could also, for example, select a smaller image size for mobile and another for desktop. This way, only the one the user needs will be downloaded.
+
+  ### How to monitor accessibility
+This part is very important. Lighthouse recommends better adjusting the contrasts of certain paragraph tags for people with vision problems. In this case, you could increase the opacity of certain fonts whose background has a similar color.
+
+  ### What you can do with the "Improve" feature
+When analyzing the desktop version, we see how the performance increases significantly. This is because a computer can have much more computing power than a mobile device, as in this case. If you applied many styles and personal elements, it is likely that the performance part will be lower.
+
+Take into account the recommendations made by Lighthouse as it is a way to improve your page in these aspects and make it much easier and more comfortable to use for the majority of users. Make this tool a superpower to improve your projects!
 
 <br>
 <br>
 <br>
 
 # AUTHOR
+
+This project was developed by *Juan Cumbe*. If you have any questions or suggestions about the project, feel free to contact me via [e-mail](mailto:hello@juancumbe.com) or my [Linkedin](https://www.linkedin.com/in/juancumbeq/) profile. 
