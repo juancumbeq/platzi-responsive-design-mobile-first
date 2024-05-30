@@ -1898,7 +1898,6 @@ footer section {
   * Set the font size to ``1.4rem`` and its weight to ``500``.
   * Set the line height to ``1.8rem``.
   * Remove the bullet points from the elements with ``list-style: none``.
-
 ```
 footer .left ul {
     font-size: 1.4rem;
@@ -1926,6 +1925,77 @@ footer .left ul {
 
 # MEDIAQUERIES
   ## [Applying Mediaqueries]()
+In this section, we need to analyze what we have worked on to identify which parts and dimensions require repositioning certain objects. Let's go to the view provided by the browser.
+
+  ### Analyzing our project
+As you know, we need a minimum of designs for three versions: mobile, tablet, and desktop. That means three CSS files linked in our index.html file. We place them in the following order:
+
+  1.  Main stylesheet (styles.css)
+  2.  Stylesheet for tablet (tablet.css)
+  3.  Stylesheet for desktop (desktop.css)
+
+As you can see, they are added from the smallest to the largest size because we are working from a Mobile First approach. In this case, there are few elements in our project, so adding one more view will suffice to achieve good results.
+
+```
+<link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
+```
+**It is important to specify in the media property the minimum width the screen needs to be to download this file. This way, we prevent the user from having to download all the files when only one is needed.**
+
+Now let's work on the sections that need a few adjustments.
+
+  ### Adjusting the tables section
+On larger screens, there is too much space around the tables. Placing them side by side helps to reduce vertical scrolling and provides a more comfortable view for the user.
+
+To do this:
+  * Call the class of the tables container with ``.main-tables-container``.
+  * Use ``display: flex`` to arrange the tables together.
+  * Set the width to ``930px`` to prevent it from growing beyond that.
+  * Center the tables with ``margin: 0 auto``.
+
+```
+.main-tables-container {
+    display: flex;
+    width: 930px;
+    margin: 0 auto;
+}
+```
+
+  ### Adjusting the benefits section
+We have the same problem as before. There is too much leftover space, and we need to rearrange the elements.
+
+To do this:
+  * Call the class of the card container with ``.product-cards–-container``.
+  * Arrange them within the box width using ``display: flex``.
+  * Arrange the boxes in columns with ``flex-wrap: wrap``.
+  * Limit the box's growth to ``930px`` to ensure no more than two columns are created.
+  * Center the tables with ``margin: 0 auto``.
+
+```
+.product-cards--container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    margin: 0 auto;
+}
+```
+
+  ### Adjusting the plans section
+As we can see, the plan cards remain on the left side of the screen when exceeding 930px in width. This is because they use ``display: flex`` to function.
+
+So, without changing it, we add a simple line of code to the same container's class:
+
+  * Center the content with ``justify-content: center``.
+
+```
+.plans-container--slider {
+    justify-content: center;
+}
+```
+
+It is often easier to design from the smallest and then grow according to the screen's needs rather than doing it the other way around.
+
+Now, we just need to evaluate the page we have created to check for accessibility issues and best practices. Great!
 
 <br>
 <br>
