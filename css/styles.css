@@ -99,6 +99,7 @@ main{
   height: auto;
   background-color: var(--off-white);
 }
+/* HEADER */
 .main-exchange-container{
   width: 100%;
   height: auto;
@@ -138,6 +139,17 @@ main{
   line-height: 1.6rem;
   color: #757575;
 }
+/* TABLES - SLIDER*/
+.main-tables-container{
+  display: flex;
+  height: 370px;
+  overflow-x: scroll;
+  /* avoid showing a white edge */
+  overscroll-behavior-x: contain;
+  /* creates a magnet to center the selected card */
+  scroll-snap-type: x proximity;
+}
+
 .main-currency-table,
 .main-fees-table{
   width: 70%;
@@ -463,6 +475,7 @@ main{
   background-image: url("../assets/icons/orange-right-arrow.svg");
   vertical-align: text-bottom;
 }
+/* PLAN CARDS SLIDER */
 .plans-container--slider{
   display: flex;
   height: 316px;
