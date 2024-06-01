@@ -8,9 +8,10 @@
 
 ## What did I learn through this course:
 
-  - Analyzing the architecture of your project starting from a wireframe
-  - Applying styles for each breakpoint
-  - Evaluating the quality of your design with Lighthouse
+  - How to analyze the architecture of a project starting from a wireframe.
+  - How to use the BEM architecture in a project.
+  - Apply styles for each breakpoint.
+  - Evaluate the quality of the design with Lighthouse.
 
 <br>
 
