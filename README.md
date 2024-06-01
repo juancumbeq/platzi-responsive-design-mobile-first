@@ -238,17 +238,17 @@ By analyzing these screenshots, you can see how the mobile view remains quite si
 
 Mobile View (iPhone X)
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/mobileX.png?raw=true" width= "75%" alt="Mobile X">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/mobileX.png?raw=true" width= "50%" alt="Mobile X">
 </p>
 
 Desktop Browser View
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/desktopX.png?raw=true" width= "75%" alt="Desktop X">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/desktopX.png?raw=true" width= "100%" alt="Desktop X">
 </p>
 
 Reduced Desktop Browser View
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/reduced-desktopX.png?raw=true" width= "75%" alt="Reduced desktop x">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/reduced-desktopX.png?raw=true" width= "65%" alt="Reduced desktop x">
 </p>
 
 <br>
@@ -330,7 +330,7 @@ If an asset is made up of many others and you want to download it as a single fi
 When selecting the group, follow the same steps as above to export from the right panel. Don't forget to check the preview to make sure you selected the group correctly.
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/group-export.webp?raw=true" width= "50%" alt="Group export">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/group-export.webp?raw=true" width= "40%" alt="Group export">
 </p>
 
 And that's how we download all the images and other assets we need for our project. I recommend downloading images in .``svg`` format whenever possible, as this is the best format for use on the web.
@@ -341,7 +341,7 @@ Here is a link to a folder where all the assets to be used are separated into fo
 
   ### How to organize our assets?
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/assets-folder.webp?raw=true" width= "50%" alt="Assets folder">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/assets-folder.webp?raw=true" width= "40%" alt="Assets folder">
 </p>
 
 For this case, we will create an assets folder containing two folders to distinguish which ones we will use as icons and which as images.
@@ -619,7 +619,7 @@ Let's go to the project prototype in Figma. By clicking on the background, we ca
 ```background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);```
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/linear-gradient.png?raw=true" width= "100%" alt="Linear gradient">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/linear-gradient.png?raw=true" width= "50%" alt="Linear gradient">
 </p>
 
 This code shows the color percentage distribution, giving 16.69% to black and 100% to orange. When rendering it in the browser, we see that the orange occupies more space than the black, each positioned in opposite corners.
@@ -675,7 +675,7 @@ Note: If you want to create gradients easily, I recommend using CSS Gradient. It
 In the browser, we should see this result:
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/styled-header?raw=true" width= "100%" alt="Styled header">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/styled-header.png?raw=true" width= "50%" alt="Styled header">
 </p>
 
 <br>
@@ -923,7 +923,7 @@ Within the text, you have two important elements:
 In the browser, we will be able to see this rendered image:
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/rendered-image.webp?raw=true" width= "75%" alt="Rendered image">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/rendered-image.webp?raw=true" width= "50%" alt="Rendered image">
 </p>
 
 <br>
@@ -1187,7 +1187,7 @@ Looking at the design, we notice there are two types of arrows: up and down. So 
 This would be our result on screen:
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/final-table-images.png?raw=true" width= "75%" alt="Final table images">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/final-table-images.png?raw=true" width= "50%" alt="Final table images">
 </p
 
 <br>
@@ -1226,7 +1226,7 @@ This would be our result on screen:
 This would be the result:
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/update.webp?raw=true" width= "75%" alt="Update">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/update.webp?raw=true" width= "50%" alt="Update">
 </p>
 
 <br>
@@ -1528,7 +1528,7 @@ The first thing is to open the next section in our ``index.html`` and add a clas
 Our result in the browser would be the following:
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/background-image-btc.png?raw=true" width= "75%" alt="BTC">
+  <img src="https://github.com/juancumbeq/platzi-responsive-design-mobile-first/blob/main/readme_images/background-image-btc.png?raw=true" width= "50%" alt="BTC">
 </p>
 
 As you can see, when reducing or enlarging the width, the section we created always occupies half the screen's height, stretching the image to the side edges.
