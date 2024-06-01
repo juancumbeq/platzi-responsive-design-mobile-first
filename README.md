@@ -1,4 +1,4 @@
-# Responsive Design: Mobile First Layout
+# Responsive Design: Mobile First Layout 
 
 <p align="center">
   <img src="https://img.shields.io/badge/Curso%20-Finalizado-brightgreen"/>
@@ -7,7 +7,6 @@
 <br>
 
 ## What did I learn through this course:
-Welcome to this course on Adaptive Design, which means mobile-first design.
 
 Why Design for Mobile?
 Over 50% of traffic comes from devices like cell phones or tablets, as it's much more convenient to open a website from a mobile device than to open a laptop and search for it. This isn't just a trend; it's a standard we must work with.
@@ -22,66 +21,141 @@ And much more!
 
 <br>
 
-## Demo
-[Click this link to check the finished interfaces](https://juancumbeq.github.io/platzi-frontend-developer-workshop/)
-
-
-<br>
-<br>
-
 # INDEX
+- [INITIAL SETUP](#initial-setup)
+  - [Analyzing The Design: The Course Project](#analyzing-the-design-the-course-project)
+    - [What do you need to work on your first project?](#what-do-you-need-to-work-on-your-first-project)
+    - [Project](#project)
+  - [The Value Of Mobile First](#the-value-of-mobile-first)
+    - [Who benefits?](#who-benefits)
+    - [Progressive evolution](#progressive-evolution)
+    - [Twitter as a case study](#twitter-as-a-case-study)
+    - [Conclusion](#conclusion)
+  - [Initial Architecture](#initial-architecture)
+    - [What is the basic structure in web architecture?](#what-is-the-basic-structure-in-web-architecture)
+    - [Tips for structuring your web architecture](#tips-for-structuring-your-web-architecture)
+  - [Assets Of Our Project](#assets-of-our-project)
+    - [What are assets?](#what-are-assets)
+    - [How to download assets?](#how-to-download-assets)
+    - [How to organize our assets?](#how-to-organize-our-assets)
+  - [Fonts Of Our Project](#fonts-of-our-project)
+    - [How to identify the font type in Figma](#how-to-identify-the-font-type-in-figma)
+    - [How to download fonts for a project](#how-to-download-fonts-for-a-project)
+    - [How to insert fonts in a project](#how-to-insert-fonts-in-a-project)
+    - [How does the ``preconnect``work?](#how-does-the-preconnectwork)
+  - [Base Styles](#base-styles)
+    - [How to position content](#how-to-position-content)
+    - [How to create variables](#how-to-create-variables)
+    - [How to reset styles](#how-to-reset-styles)
 
-# INITIAL SETUP
-  ## ANALYZING THE DESIGN: THE COURSE PROJECT
-  ## THE VALUE OF MOBILE FIRST
-  ## INITIAL ARCHITECTURE
-  ## ASSETS OF OUR PROJECT
-  ## FONTS OF OUR PROJECT
-  ## BASE STYLES
+- [HEADER SECTION](#header-section)
+  - [Header Layout](#header-layout)
+    - [How to layout in Figma](#how-to-layout-in-figma)
+  - [BEM Architecture Implementation](#bem-architecture-implementation)
+    - [What is BEM?](#what-is-bem)
+    - [Tips for naming classes](#tips-for-naming-classes)
+    - [How to apply styles to classes](#how-to-apply-styles-to-classes)
+  - [Use Of ``linear-gradient``](#use-of-linear-gradient)
+    - [How to style the background](#how-to-style-the-background)
+    - [How to style the title](#how-to-style-the-title)
+    - [How to style the paragraph](#how-to-style-the-paragraph)
+  - [Use Of ``position`` For Floating Button](#use-of-position-for-floating-button)
+    - [How to style the button](#how-to-style-the-button)
+    - [How to style the icon](#how-to-style-the-icon)
+    - [How to call an asset from another folder](#how-to-call-an-asset-from-another-folder)
 
-# HEADER SECTION
-  ## HEADER LAYOUT
-  ## BEM ARCHITECTURE IMPLEMENTATION
-  ## USE OF ``LINEAR-GRADIENT``
-  ## USE OF ``POSITION`` FOR FLOATING BUTTON
+- [EXCHANGE SECTION](#exchange-section)
+  - [Base Structure Of The Exchange Section](#base-structure-of-the-exchange-section)
+    - [How to divide sections](#how-to-divide-sections)
+    - [How to style the sections](#how-to-style-the-sections)
+  - [Background Image](#background-image)
+    - [Steps to add a background image](#steps-to-add-a-background-image)
+    - [Steps to add text](#steps-to-add-text)
+  - [Currency Table Structure](#currency-table-structure)
+    - [Steps to layout the table](#steps-to-layout-the-table)
+    - [How to add classes](#how-to-add-classes)
+  - [Currency Table Base Styles](#currency-table-base-styles)
+    - [Applying styles to the main container](#applying-styles-to-the-main-container)
+    - [Applying styles to the title](#applying-styles-to-the-title)
+    - [Applying styles directly to the container](#applying-styles-directly-to-the-container)
+    - [Applying styles to the table](#applying-styles-to-the-table)
+    - [Applying styles to the cells](#applying-styles-to-the-cells)
+  - [Detailing Currency Table Styles](#detailing-currency-table-styles)
+    - [How to add table borders](#how-to-add-table-borders)
+    - [How to style the price text](#how-to-style-the-price-text)
+    - [How to add icons](#how-to-add-icons)
+  - [Finishing Currency Table Styles](#finishing-currency-table-styles)
+    - [How to add styles](#how-to-add-styles)
+    - [How to style the text](#how-to-style-the-text)
 
-# EXCHANGE SECTION
-  ## BASE STUCTURE OF THE EXCHANGE SECTION
-  ## BACKGROUND IMAGE
-  ## CURRENCY TABLE STRUCTURE
-  ## CURRENCY TABLE BASE STYLES
-  ## DETAILING CURRENCY TABLE STYLES
-  ## FINISHING CURRENCY TABLE STYLES
+-[BENEFITS SECTION](#benefits-section)
+  - [Base Structure Of The Benefits Section](#base-structure-of-the-benefits-section)
+    - [Structure analysis](#structure-analysis)
+    - [How to layout](#how-to-layout)
+  - [Benefits Section Styles](#benefits-section-styles)
+    - [Applying styles to the main container](#applying-styles-to-the-main-container-1)
+    - [Steps to style the logo](#steps-to-style-the-logo)
+    - [Adding styles to the title](#adding-styles-to-the-title)
+    - [Summary](#summary)
+  - [Layout Of Benefits Cards](#layout-of-benefits-cards)
+    - [Creating styles for the container](#creating-styles-for-the-container)
+    - [Applying styles to the icon](#applying-styles-to-the-icon)
+    - [Applying styles to the text](#applying-styles-to-the-text)
 
-# BENEFITS SECTION
-  ## BASE STRUCTURE OF THE BENEFITS SECTION
-  ## BENEFITS SECTION STYLES
-  ## LAYOUT OF BENEFITS CARDS
+- [PLANS SECTION](#plans-section)
+  - [Layout Of Comodin Section](#layout-of-comodin-section)
+    - [Laying out the wildcard section](#laying-out-the-wildcard-section)
+    - [Layout](#layout)
+    - [Container styles](#container-styles)
+    - [Text styles](#text-styles)
+  - [Plans Section Structure](#plans-section-structure)
+    - [Design analysis for the plans section](#design-analysis-for-the-plans-section)
+    - [How to layout](#how-to-layout-1)
+  - [Applying Styles To The Plans Section](#applying-styles-to-the-plans-section)
+    - [Calling the main container](#calling-the-main-container)
+    - [How to apply styles to the title container](#how-to-apply-styles-to-the-title-container)
+    - [Title](#title)
+    - [Description](#description)
+  - [Applying Styles To The Plans Section Cards](#applying-styles-to-the-plans-section-cards)
+    - [Card container](#card-container)
+  - [Detailing Styles On Plan Cards](#detailing-styles-on-plan-cards)
+    - [Adding styles to the plan cards](#adding-styles-to-the-plan-cards)
+    - [Floating button](#floating-button)
+    - [Title](#title-1)
+    - [Price](#price)
+    - [Description](#description-1)
+  - [Applying Styles To The Call To Action Button](#applying-styles-to-the-call-to-action-button)
+    - [Change the default button](#change-the-default-button)
+    - [How to modify the icon](#how-to-modify-the-icon)
+  - [Horizontal Scroll With CSS](#horizontal-scroll-with-css)
+    - [How to create a scroll](#how-to-create-a-scroll)
 
-# PLANS SECTION
-  ## LAYOUT OF COMODIN SECTION
-  ## PLANS SECTION STRUCTURE
-  ## APPLYING STYLES TO THE PLANS SECTION
-  ## APPLYING STYLES TO THE PLANS SECTION CARDS
-  ## DETAILING STYLES ON PLAN CARDS
-  ## APPLYING STYLES TO THE CALL TO ACTION BUTTON
-  ## HORIZONTAL SCROLL WITH CSS
+- [FOOTER SECTION](#footer-section)
+  - [Footer](#footer)
+    - [Footer structure](#footer-structure)
+    - [How to style the footer](#how-to-style-the-footer)
+      - [Container](#container)
+      - [Sections](#sections)
 
-# FOOTER SECTION
-  ## FOOTER
+- [MEDIAQUERIES](#mediaqueries)
+  - [Applying Mediaqueries](#applying-mediaqueries)
+    - [Analyzing our project](#analyzing-our-project)
+    - [Adjusting the tables section](#adjusting-the-tables-section)
+    - [Adjusting the benefits section](#adjusting-the-benefits-section)
+    - [Adjusting the plans section](#adjusting-the-plans-section)
 
-# MEDIAQUERIES
-  ## APPLYING MEDIAQUERIES
+- [LIGHTHOUSE](#lighthouse)
+  - [Analysis With Lighthouse](#analysis-with-lighthouse)
+    - [How to access lighthouse](#how-to-access-lighthouse)
+    - [How to monitor performance](#how-to-monitor-performance)
+    - [How to monitor accessibility](#how-to-monitor-accessibility)
+    - [What you can do with the "Improve" feature](#what-you-can-do-with-the-improve-feature)
 
-# LIGHTHOUSE
-  ## ANALYSIS WITH LIGHTHOUSE
-
-# NEXT STEPS
-  ## CLOSE AND NEXT STEPS
-
-# AUTHOR
+- [AUTHOR](#author)
 
 
+## Demo
+[Click this link to check the finished website](https://juancumbeq.github.io/platzi-frontend-developer-workshop/)
 
 <br>
 <br>
@@ -131,7 +205,7 @@ In responsive design, a design adapts to different views regardless of which dev
 
 <br>
 
-  ### Who Benefits?
+  ### Who benefits?
   * For Developers: Scaling is Easier
 
 Converting a desktop view to a mobile view requires various considerations and can become complex as it often involves removing elements from the view, whereas it is generally easier to add them.
@@ -154,7 +228,7 @@ For SEO purposes, this can mean a lower user bounce rate if the content is attra
 
 <br>
 
-  ### Progressive Evolution
+  ### Progressive evolution
 Just as technology advances, we can also observe changes in frontend development trends that even become standards, such as Mobile First.
 
 Initially, we developed for desktops where our website could be accessed from a desktop computer and laptop monitors. Then arose the need to adapt these sites to portable devices like smartphones and tablets.
@@ -163,7 +237,7 @@ As mobile site consumption increased, the need arose to develop first for these 
 
 <br>
 
-  ### Twitter as a Case Study
+  ### Twitter as a case study
 This popular social network has undergone various design transformations, one of the most important being its visualization across different devices.
 
 By analyzing these screenshots, you can see how the mobile view remains quite simplified, and as the view size increases, other elements are added while maintaining common ones.
@@ -220,7 +294,7 @@ Thus, we could define the basic structure of the body of our **index.html** as f
 
 <br>
 
-  ### Tips for Structuring Your Web Architecture
+  ### Tips for structuring your web architecture
 Remember:
 
 You should have your **index.html** and **.css** files within organized folders.
@@ -476,7 +550,7 @@ Don’t Forget:
 
 <br>
 
-  ### How to Apply Styles to Classes
+  ### How to apply styles to classes
 Remember, we are designing for mobile first, so our view should focus on that. When checking the results in the browser, make sure to have the **Dimension: Responsive option enabled in the DevTools.**
 
   * **Header**
@@ -1165,7 +1239,7 @@ This would be the result:
 <br>
 <br>
 
-# BENEFITS SECTION
+# BENEFITS SECTION
   ## [Base Structure Of The Benefits Section]()
   ### Structure analysis
 At the start, we find a floating logo that we already learned to position with position: absolute. We have some other icons that we can place in span tags and several containers with text boxes.
@@ -1176,7 +1250,7 @@ At the start, we find a floating logo that we already learned to position with p
 
 The image only covers the first box, as the following ones have the same structure.
 
-  ### How to Layout
+  ### How to layout
   * Open the second section and give it a class based on its content. Since it details what the Batatabit product is, the name could be ``main-product-detail``.
   * Create the class for the main title container with ``product-detail--title``.
   * Create the tags we previously found in the design, such as ``span``, ``h2``, ``p``, ``section``, and ``article``.
@@ -1207,10 +1281,10 @@ Within the first article:
 <br>
 <br>
 
-  ## [Benefits Section Styles]()
+  ## [Benefits Section Styles]()
 In the base structure of the benefits section, we laid out the necessary tags and their respective classes to start applying styles.
 
-  ### Applying styles to the main container
+  ### Applying styles to the main container
   * We call the section container class with ``.main-product-detail``. 
   * We assign it a ``position: relative``. This is because the floating logo container will be created with ``position: absolute``. For an element with ``position: absolute`` to be positioned correctly, it looks for the first parent container that has ``position: relative``. That's why we set it here so that it remains within this container.
   * We set its width to ``100%`` and limit it to a minimum of ``320px``. 
@@ -1226,7 +1300,7 @@ In the base structure of the benefits section, we laid out the necessary tags an
     background-color: var(--warm-black);
 }
 ```
-  ### Steps to style the logo
+  ### Steps to style the logo
   * We call the class directly of the ``span`` tag for the logo with ``.product-detail--batata-logo``. 
   * We assign it a ``position: absolute`` so that it floats above other elements.
   * We set its width to ``40px`` and height to ``25px``.
@@ -1247,7 +1321,7 @@ In the base structure of the benefits section, we laid out the necessary tags an
     background-image: url("./assets/icons/batata.svg");
 }
 ```
-  ### Adding styles to the title
+  ### Adding styles to the title
 Consider these three elements:
 
 **Container:**
@@ -1314,12 +1388,12 @@ We remembered an important aspect of ``position: absolute`` and its direct relat
 <br>
 <br>
 
-  ## [Layout Of Benefits Cards]()
+  ## [Layout Of Benefits Cards]()
 After applying the styles in the benefits section, we will create the styles for the cards in the second section we are working on.
 
 Of course, we start with the container and then the content.
 
-  ### Creating styles for the container
+  ### Creating styles for the container
   * We call the class of the container of the first card with ``.product-detail–card``. 
   * We adjust its width to ``90%`` and height to ``150px``. 
   * We set a minimum width of ``288px`` and a maximum of ``400px``. This is to prevent it from growing too much and getting distorted on very large screens. 
@@ -1341,7 +1415,7 @@ Of course, we start with the container and then the content.
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 }
 ```
-  ### Applying styles to the icon
+  ### Applying styles to the icon
   * We call the class of our ``span`` tag from its container class. 
   * We set ``display: inline-block`` so that the icon occupies a line of space. 
   * We set its height and width to ``20px``. 
@@ -1360,7 +1434,7 @@ Of course, we start with the container and then the content.
     background-repeat: no-repeat;
 }
 ```
-  ### Applying styles to the text
+  ### Applying styles to the text
 Consider the following two elements:
 
 **Title:**
@@ -1398,8 +1472,8 @@ The card would look like this:
 <br>
 <br>
 
-# PLANS SECTION
-  ## [Layout Of Comodin Section]()
+# PLANS SECTION
+  ## [Layout Of Comodin Section]()
 You might have encountered an issue with one of the containers where the content overflowed, causing an overflow.
 
 This type of problem occurs because we defined an absolute height for the boxes. Pixel measurements are absolute values that do not change regardless of the container's size, while percentages are relative values that adapt to the screen size. However, in this case, all we need to do is add a minimum width, below which it cannot shrink further.
@@ -1411,10 +1485,10 @@ min-height: 150px;
 
 This way, it will always have a minimum height of ``150px``, but if it needs more, it will grow.
 
-  ### Laying out the wildcard section
+  ### Laying out the wildcard section
 The analysis of this section is very simple. We only find a couple of elements that we need to create: a title and a background image.
 
-  ### Layout
+  ### Layout
 The first thing is to open the next section in our ``index.html`` and add a class to identify it. We create an ``h2`` to apply the title.
 ```
 <section class="bitcoin-img-container">
@@ -1422,7 +1496,7 @@ The first thing is to open the next section in our ``index.html`` and add a clas
 </section>
 ```
 
-  ### Container styles
+  ### Container styles
   * We call the section by its class with ``.bitcoin-img-container``. 
   * We adjust the width to ``100%`` of the screen and limit it to ``320px``. 
   * We give it a height of ``50%`` of the screen height with ``height: 50vh``. 
@@ -1441,7 +1515,7 @@ The first thing is to open the next section in our ``index.html`` and add a clas
 }
 ```
 
-  ### Text styles
+  ### Text styles
   * We call the ``h2`` tag from its container with ``.bitcoin-img-container h2``. 
   * We add a top padding of ``60px``. 
   * We adjust the font size to ``2.4rem`` and set it to ``bold``. 

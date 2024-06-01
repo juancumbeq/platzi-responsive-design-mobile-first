@@ -139,7 +139,7 @@ main{
   line-height: 1.6rem;
   color: #757575;
 }
-/* TABLES - SLIDER*/
+/* TABLES - SLIDER */
 .main-tables-container{
   display: flex;
   height: 370px;
@@ -152,6 +152,8 @@ main{
 
 .main-currency-table,
 .main-fees-table{
+  /* SCROLL */
+  scroll-snap-align: center;
   width: 70%;
   min-width: 235px;
   max-width: 500px;
