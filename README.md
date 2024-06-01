@@ -8,16 +8,9 @@
 
 ## What did I learn through this course:
 
-Why Design for Mobile?
-Over 50% of traffic comes from devices like cell phones or tablets, as it's much more convenient to open a website from a mobile device than to open a laptop and search for it. This isn't just a trend; it's a standard we must work with.
-
-What Will You Learn in This Course?
-Some of the skills you will acquire include:
-
-Analyzing the architecture of your project starting from a wireframe
-Applying styles for each breakpoint
-Evaluating the quality of your design with Lighthouse
-And much more!
+  - Analyzing the architecture of your project starting from a wireframe
+  - Applying styles for each breakpoint
+  - Evaluating the quality of your design with Lighthouse
 
 <br>
 
