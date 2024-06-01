@@ -149,7 +149,7 @@
 
 
 ## Demo
-[Click this link to check the finished website](https://juancumbeq.github.io/platzi-frontend-developer-workshop/)
+[Click this link to check the finished website](https://juancumbeq.github.io/platzi-responsive-design-mobile-first/)
 
 <br>
 <br>
