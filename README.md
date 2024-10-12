@@ -308,7 +308,7 @@ Web architecture can be defined as the way in which the pages of a website are s
 
 Thus, we could define the basic structure of the body of our **index.html** as follows:
 
-```
+```html
 <body>
     <header></header>
     <main>
@@ -442,7 +442,7 @@ To link the copied link from the previous step, open your index.html file and go
 
 The generated link for the project we are working on is the following:
 
-```
+```html
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
@@ -499,7 +499,7 @@ By clicking on the adjustment icon of each color, you can view the details. Here
 
 Remember, to declare a variable in CSS, we use the `:root` function and add a name to the variable that will contain the value we will use repeatedly in our code. Selecting all the colors, we would have:
 
-```
+```css
 :root {
     --bitcoin-orange: #f7931a;
     --soft-orange: #ffe9d5;
@@ -519,7 +519,7 @@ Remember, to declare a variable in CSS, we use the `:root` function and add a na
 
 Once the variable section is declared at the top, it is time to reset the default styles that the browser brings with the practices we already know.
 
-```
+```css
 * {
     box-sizing: border-box;
     margin: 0;
@@ -529,7 +529,7 @@ Once the variable section is declared at the top, it is time to reset the defaul
 
 We will also change the font size to 62.5% to make it easier to use with REM measurements. And we will change the font style that we have embedded from Google Fonts.
 
-```
+```css
 html {
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
@@ -556,7 +556,7 @@ First, create an `img` tag inside the `header` for the logo. Then, a `div` conta
 
 The code would look like this:
 
-```
+```html
 <header>
     <img src="" alt="">
     <div>
@@ -615,7 +615,7 @@ Remember, we are designing for mobile first, so our view should focus on that. W
   - Limit the width to a minimum of 320px.
   - Center the text with text-align: center.
 
-```
+```css
 header {
     position: relative;
     display: flex;
@@ -633,7 +633,7 @@ header {
   - Set the top margin to 60px.
   - Since we are using display: flex in the parent container, center the logo with align-self: center.
 
-```
+```css
 header img {
     width: 150px;
     height: 24px;
@@ -650,7 +650,7 @@ header img {
   - Center the text with `text-align: center`.
   - Center the container with `align-self: center`.
 
-```
+```css
 .header--title-container {
     width: 90%;
     min-width: 288px;
@@ -707,7 +707,7 @@ Note: If you want to create gradients easily, I recommend using CSS Gradient. It
 - We set the line height with `line-height: 2.6rem`.
 - We change the color using the corresponding variable, `color: var(--just-white)`.
 
-```
+```css
 .header--title-container h1 {
     font-size: 2.4rem;
     font-weight: bold;
@@ -731,7 +731,7 @@ Note: If you want to create gradients easily, I recommend using CSS Gradient. It
 - We give it a line height with `line-height: 1.8rem`.
 - We change the font color using the corresponding variable, `color: var(--soft-orange)`.
 
-```
+```css
 .header--title-container p {
     margin-top: 25px;
     font-size: 1.4rem;
@@ -774,7 +774,7 @@ Follow these steps:
 Set the font size to 1.4rem and make it bold with `font-weight: bold``.
 - Remove the underline with `text-decoration: none` and give it a black color with the created variable.
 
-```
+```css
 .header--title-container .header--button {
     position: absolute;
     left: calc(50% - 118px);
@@ -822,7 +822,7 @@ You place `../` in the URL to go to the previous folder and from there find the 
 
 Remember that the URL always goes in quotes.
 
-```
+```css
 .header--button span {
     display: inline-block;
     width: 13px;
@@ -864,7 +864,7 @@ Create the second `div` container for the `h2` title and the `p` paragraph, in w
 
 The tables that show the currency values are a section by themselves, so it is more correct to create a `section` instead of a `div`. Place the `div` inside it.
 
-```
+```html
 <section class="main-exchange-container">
     <div class="backgroundImg"></div>
     <div class="main-exchange-container--title">
@@ -891,7 +891,7 @@ There are three elements to keep in mind:
 
 - Give it a background color using the variable --off-white.
 
-```
+```css
 main {
     width: 100%;
     min-width: 320px;
@@ -908,7 +908,7 @@ main {
 
 - Align the text to the center.
 
-```
+```css
 .main-exchange-container {
     width: 100%;
     height: auto;
@@ -924,7 +924,7 @@ main {
 
 - Add `margin: 0 auto` so that, despite not occupying 100% of the width, it is always centered.
 
-```
+```css
 .main-exchange-container--title {
     width: 90%;
     min-width: 288px;
@@ -961,7 +961,7 @@ Once you are in the project:
 - `background-position: center` ensures that we always have a view of the center of the image, regardless of the container size.
 - `background-repeat: no-repeat` prevents the image from repeating if it is smaller than the container.
 
-```
+```css
 .main-exchange-container .backgroundImg {
     width: 200px;
     height: 200px;
@@ -988,7 +988,7 @@ Within the text, you have two important elements:
 - Give it a line height of 2.6rem.
 - Color it with the `--black `variable.
 
-```
+```css
 .main-exchange-container h2 {
     margin-bottom: 30px;
     font-size: 2.4rem;
@@ -1006,7 +1006,7 @@ Within the text, you have two important elements:
 - Give it a line height of 1.6rem.
 - Color it grey with `color: #757575`. In this case, the color is not in a variable because it is used only once in the entire .css document.
 
-```
+```css
 .main-exchange-container p {
     margin-bottom: 30px;
     font-size: 1.4rem;
@@ -1039,7 +1039,7 @@ Let's create the code for the tables in our project. We see in the design a tota
 - We work with two additional tags: `tr` (table row) for the rows and `td` (table data) for the data in each row.
 - Add the corresponding information based on the design we are working on.
 
-```
+```html
 <section class="main-tables-container">
     <div>
         <p>Monedas</p>
@@ -1090,7 +1090,7 @@ Start adding classes to apply styles.
 - Highlight the word shown in bold by placing it within the `b` tag.
 - Finally, add the class `currency-table--date` to the newly created container to apply styles to it.
 
-```
+```html
 <section class="main-tables-container">
     <div class="main-currency-table">
         <p class="currency-table--title">Monedas</p>
@@ -1141,7 +1141,7 @@ The rendered result in the browser would show:
 - Center the content with `margin: 0 auto`.
 - Add the font used by the tables with `font-family: "Inter", sans-serif`.
 
-```
+```css
 .main-currency-table {
     width: 70%;
     min-width: 235px;
@@ -1159,7 +1159,7 @@ The rendered result in the browser would show:
 - Adjust the font size to `1.8rem` and make it `bold`.
 - Add a line height of `2.3rem`.
 
-```
+```css
 .main-currency-table .currency-table--title {
     margin-bottom: 15px;
     font-size: 1.8rem;
@@ -1177,7 +1177,7 @@ The rendered result in the browser would show:
 - Adjust the height to `250px`.
 - Center the content with `margin: 0 auto`.
 
-```
+```css
 .currency-table--container {
     width: 90%;
     min-width: 230px;
@@ -1192,7 +1192,7 @@ The rendered result in the browser would show:
 - Call the `table` tag from its parent container with `.currency-table--container table`.
 - Give it a width and height of `100%` to occupy the entire space of the parent container.
 
-```
+```css
 .currency-table--container table {
     width: 100%;
     height: 100%;
@@ -1208,7 +1208,7 @@ The rendered result in the browser would show:
 - Change the color using the `--grey variable`.
 - Add a background color using the `--just-white` variable.
 
-```
+```css
 .currency-table--container td {
     width: 50%;
     font-size: 1.6rem;``
@@ -1238,7 +1238,7 @@ Remember we created specific classes for the buttons situated at the corners? No
 - Add `border-radius: 15px 0 0 0`, where each of the four positions represents a corner of the box we are styling: `top-left`, t`op-right`, `bottom-right`, and `bottom-left`, respectively.
 - Apply these values to each corner.
 
-```
+```css
 .currency-table--container .table__top-left {
     border-radius: 15px 0 0 0;
 }
@@ -1260,7 +1260,7 @@ Remember we created specific classes for the buttons situated at the corners? No
 - Add a line height of `1.7rem`.
 - Adjust the color to the one used in the design, `#757575`.
 
-```
+```css
 .currency-table--container .table__right {
     font-size: 1.4rem;
     font-weight: normal;
@@ -1281,7 +1281,7 @@ Looking at the design, we notice there are two types of arrows: up and down. So 
 - Adjust its size to the container with cover, center it, and specify that the image should not repeat.
 - Apply the same styles for the class `.currency-table--container .up`, just changing the icon URL.
 
-```
+```css
 .currency-table--container .down {
     display: inline-block;
     width: 15px;
@@ -1324,7 +1324,7 @@ This would be our result on screen:
 - Adjust its background color using the variable `--soft-orange`.
 - Round the corners with `border-radius: 8px`.
 
-```
+```css
 .currency-table--date {
     width: 190px;
     height: 30px;
@@ -1342,7 +1342,7 @@ This would be our result on screen:
 - Adjust its size to `1.2rem` and give it a line height of `1.5rem`.
 - Finally, change the color using the variable `--warm-black`.
 
-```
+```css
 .currency-table--date p {
     font-size: 1.2rem;
     line-height: 1.5rem;
@@ -1387,7 +1387,7 @@ Within the first article:
 - The second `p` tag will be the card body, and its class name will be `product--card-body`.
 - Finally, add the content inside each text tag.
 
-```
+```html
 <section class="main-product-detail">
     <span class="product-detail--batata-logo"></span>
     <div class="product-detail--title">
@@ -1418,7 +1418,7 @@ In the base structure of the benefits section, we laid out the necessary tags an
 - We set its width to `100%` and limit it to a minimum of `320px`.
 - We set the height to `auto` so that it adjusts to the content. We add padding of `20px` at the top and bottom and `10px` on the sides.
 
-```
+```css
 .main-product-detail {
     position: relative; /* This is to ensure that the floating logo container, which will be created with position: absolute, is positioned correctly. */
     width: 100%;
@@ -1441,7 +1441,7 @@ To center it between the two sections:
 - We center it with `left: calc(50% - 20px)`, where `50%` places it in the middle, but it’s not centered yet. This is because the logo has dimensions (`40px` to be precise), and since we want it exactly in the middle, we subtract half of its width (`20px`), positioning it right in the center.
 - We call the image with `background-image: url("")`.
 
-```
+```css
 .product-detail--batata-logo {
     position: absolute; /* Ensures it floats above other elements */
     width: 40px;
@@ -1466,7 +1466,7 @@ Consider these three elements:
 - The center it with `margin: 0 auto`.
 - We separate the text from the top edge with `margin-top: 50px`. We center the text with `text-align: center`.
 
-```
+```css
 .product-detail--title {
     width: 90%;
     min-width: 288px;
@@ -1485,7 +1485,7 @@ Consider these three elements:
 - We set the line height to `2.6rem`.
 - We change the color with the variable `--just-white`.
 
-```
+```css
 .product-detail--title h2 {
     margin-bottom: 20px; /* Separates it from the paragraph below */
     font-size: 2.4rem;
@@ -1503,7 +1503,7 @@ Consider these three elements:
 - We set the line height to `1.8rem`.
 - We change the color to `#808080` as indicated in the Figma design.
 
-```
+```css
 .product-detail--title p {
     margin-bottom: 20px; /* Separates it from the sections below */
     font-size: 1.4rem;
@@ -1544,7 +1544,7 @@ Of course, we start with the container and then the content.
 - We round its corners with `border-radius: 5px`.
 - We create a shadow for the box with `box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16)`.
 
-```
+```css
 .product-detail--card {
     width: 90%;
     min-width: 288px;
@@ -1567,7 +1567,7 @@ Of course, we start with the container and then the content.
 - We add the icon with `background-image: url("")`.
 - We adjust it to cover the entire box, center it, and ensure the image does not repeat.
 
-```
+```css
 .product-detail--card .clock {
     display: inline-block;
     width: 20px;
@@ -1591,7 +1591,7 @@ Consider the following two elements:
 - We adjust the font size to `1.8rem` and set it to `bold`.
 - We adjust the line height to `1.8rem` and set the color with the variable `–-just-white`.
 
-```
+```css
 .product--card-title {
     margin-bottom: 15px;
     font-size: 1.8rem;
@@ -1607,7 +1607,7 @@ Consider the following two elements:
 - We adjust the font size to `1.4rem` and set it to a weight of `500`.
 - We adjust the line height to `1.8rem` and set the color to `#808080`.
 
-```
+```css
 .product--card-body {
     font-size: 1.4rem;
     font-weight: 500;
@@ -1632,7 +1632,7 @@ This type of problem occurs because we defined an absolute height for the boxes.
 
 For this, we go to the container class of the cards `.product-detail–card` and limit the minimum width to `150 pixels`, like so:
 
-```
+```css
 min-height: 150px;
 ```
 
@@ -1646,7 +1646,7 @@ The analysis of this section is very simple. We only find a couple of elements t
 
 The first thing is to open the next section in our `index.html` and add a class to identify it. We create an `h2` to apply the title.
 
-```
+```html
 <section class="bitcoin-img-container">
     <h2>Learn about it today</h2>
 </section>
@@ -1661,7 +1661,7 @@ The first thing is to open the next section in our `index.html` and add a class 
 - We center the image with respect to the container with `center`.
 - It is important to set `background-repeat: no-repeat` so that the image does not duplicate when moving to larger dimensions, such as a laptop.
 
-```
+```css
 .bitcoin-img-container {
     width: 100%;
     min-width: 320px;
@@ -1681,7 +1681,7 @@ The first thing is to open the next section in our `index.html` and add a class 
 - We give it a line height of `2.6rem`.
 - We change its color with the variable `–just-white`.
 
-```
+```css
 .bitcoin-img-container h2 {
     padding-top: 60px;
     font-size: 2.4rem;
@@ -1724,7 +1724,7 @@ Example of section design:
 
 Knowing the tags we need to use, we start laying out our structure:
 
-```
+```html
 <section id="plans" class="main-plans-container">
     <div class="plans--title">
         <h2>Choose the plan that best suits you.</h2>
@@ -1746,7 +1746,7 @@ Knowing the tags we need to use, we start laying out our structure:
 
 Remember that you can create the entire structure with a single line of code using Emmet, like this:
 
-```
+```html
 (div>h2+p)+section>article>p+div>h3+p*2+button
 ```
 
@@ -1770,7 +1770,7 @@ Now we are going to apply styles to our plans section. This time, we will work o
 - Create a bottom internal spacing of `70px`.
 - Center all contained text with `text-align: center`.
 
-```
+```css
 .main-plans-container {
     width: 100%;
     min-width: 320px;
@@ -1787,7 +1787,7 @@ Now we are going to apply styles to our plans section. This time, we will work o
 - Center it with `margin: 0 auto `to account for the remaining `10%` width.
 - Create a bottom margin of `50px` to separate it from the cards.
 
-```
+```css
 .plans--title {
     width: 90%;
     min-width: 288px;
@@ -1803,7 +1803,7 @@ Now we are going to apply styles to our plans section. This time, we will work o
 - Adjust the font size to `2.4rem` and set its weight to `bold`.
 - Add a line-height of `2.6rem` and change its color with the `--black` variable.
 
-```
+```css
 .plans--title h2 {
     padding-top: 50px;
     font-size: 2.4rem;
@@ -1819,7 +1819,7 @@ Now we are going to apply styles to our plans section. This time, we will work o
 - Adjust the font size to `1.4rem` and set its weight to `500`.
 - Add a line-height of `1.8rem` and change its color to `#757575`.
 
-```
+```css
 .plans--title p {
     padding-top: 30px;
     font-size: 1.4rem;
@@ -1856,7 +1856,7 @@ First, call the class of the card container with `.plans-container–-card`.
 - Round the corners of the card with `border-radius: 15px`.
 - Generate a shadow for the box with `box-shadow`.
 
-```
+```css
 .plans-container--card {
     position: relative;
     width: 70%;
@@ -1902,7 +1902,7 @@ Consider the following elements:
 - Adjust the background color with the variable `--bitcoin-orange` and the text color with `--just-white`.
 - Round the corners of the box with `border-radius: 8px`.
 
-```
+```css
 .recommended {
     position: absolute;
     width: 120px;
@@ -1925,7 +1925,7 @@ Consider the following elements:
 - Add a line height of `1.8rem`.
 - Adjust the text color with the variable `--black`.
 
-```
+```css
 .plan-card--title {
     padding-top: 30px;
     font-size: 1.4rem;
@@ -1949,7 +1949,7 @@ For the dollar sign:
 - Set the font size to `1.2rem` and font weight to `300`.
 - Position the sign at the top with `vertical-align: 25px`.
 
-```
+```css
 .plan-card--price {
     padding: 5px 0;
     font-size: 5.2rem;
@@ -1957,20 +1957,20 @@ For the dollar sign:
     line-height: 5.3rem;
     color: var(--black);
 }
-```
 
 .plan-card--price sup {
 font-size: 1.2rem;
 font-weight: 300;
 vertical-align: 25px;
 }
+```
 
 ### Description
 
 - Call the paragraph tag with its class `.plan-card–saving`.
 - Set the font size to `1.2rem` and change its color to `#757575`.
 
-```
+```css
 .plan-card--saving {
     font-size: 1.2rem;
     color: #757575;
@@ -2002,7 +2002,7 @@ To finish this section, we just need the call to action, and then we can move on
 - Adjust the font size to `1.4rem` and font weight to `bold`.
 - Set the line height to `1.8rem` and the color to the `--black` variable.
 
-```
+```css
 .plan-card--ca {
     width: 150px;
     height: 48px;
@@ -2026,7 +2026,7 @@ To finish this section, we just need the call to action, and then we can move on
 - Insert the icon with a `background-image: url("")`.
 - To place the icon at the same height as the text, use `vertical-align: text-bottom`.
 
-```
+```css
 .plan-card--ca span {
     display: inline-block;
     width: 20px;
@@ -2055,7 +2055,7 @@ As a front-end developer, you will often use frameworks to speed up your creatio
 
 First, for our container to generate the scroll between the cards, they need to have it. We center all the cards to create a scroll with `scroll-snap-align: center`. Place this line just below the position: relative of our card container.
 
-```
+```css
 .plans-container--card {
     position: relative;
     scroll-snap-align: center;
@@ -2072,7 +2072,7 @@ First, for our container to generate the scroll between the cards, they need to 
 - `overscroll-behavior` sets what a browser does when it reaches the limit of a scroll area.
 - To make the view center on each card as if they had a magnet when scrolling over them, use `scroll-snap-type: x` proximity.
 
-```
+```css
 .plans-container--slider {
     display: flex;
     height: 316px;
@@ -2092,7 +2092,7 @@ Currently, gap is supported by almost all browsers. However, to use a new proper
 
 You can check on the [Can I Use](https://caniuse.com/) website, among other things, the number of browsers in which a property is available. In this case, to solve it, let's go to the card container and look for the margin property.
 
-```
+```css
 .plans-container--card {
     ...
     margin: 50px auto 0;
@@ -2102,7 +2102,7 @@ You can check on the [Can I Use](https://caniuse.com/) website, among other thin
 
 Change the auto attribute to 15px.
 
-```
+```css
 .plans-container--card {
     ...
     margin: 50px 15px 0;
@@ -2138,7 +2138,7 @@ The footer is divided into two fairly simple sections: one with social media lin
 - In the second section, include the image with an img tag. Add a description of the image for accessibility.
 - Add classes to each of the sections with left and right, respectively.
 
-```
+```html
 <footer>
     <section class="left">
         <ul>
@@ -2165,7 +2165,7 @@ Call the footer tag directly to apply styles.
 - Set its width to `100%` and its height to `150px`.
 - Set the background color using the `--bitcoin-orange` variable.
 
-```
+```css
 footer {
     display: flex;
     width: 100%;
@@ -2181,7 +2181,7 @@ footer {
 - Center the boxes with `justify-content: center`.
 - Align the elements inside the containers with `align-items: center`.
 
-```
+```css
 footer section {
     display: flex;
     width: 50%;
@@ -2195,7 +2195,7 @@ footer section {
 - Set the line height to `1.8rem`.
 - Remove the bullet points from the elements with `list-style: none`.
 
-```
+```css
 footer .left ul {
     font-size: 1.4rem;
     font-weight: 500;
@@ -2208,7 +2208,7 @@ footer .left ul {
 - Remove the underlining from the texts generated by the a tag with `text-decoration: none`.
 - Change the text color with `--just-white`.
 
-```
+```css
 .left li {
     margin: 10px 0;
 }
@@ -2238,7 +2238,7 @@ As you know, we need a minimum of designs for three versions: mobile, tablet, an
 
 As you can see, they are added from the smallest to the largest size because we are working from a Mobile First approach. In this case, there are few elements in our project, so adding one more view will suffice to achieve good results.
 
-```
+```html
 <link rel="stylesheet" href="./styles.css">
 <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
 ```
@@ -2258,7 +2258,7 @@ To do this:
 - Set the width to `930px` to prevent it from growing beyond that.
 - Center the tables with `margin: 0 auto`.
 
-```
+```css
 .main-tables-container {
     display: flex;
     width: 930px;
@@ -2278,7 +2278,7 @@ To do this:
 - Limit the box's growth to `930px` to ensure no more than two columns are created.
 - Center the tables with `margin: 0 auto`.
 
-```
+```css
 .product-cards--container {
     display: flex;
     flex-wrap: wrap;
@@ -2295,7 +2295,7 @@ So, without changing it, we add a simple line of code to the same container's cl
 
 - Center the content with `justify-content: center`.
 
-```
+```css
 .plans-container--slider {
     justify-content: center;
 }
